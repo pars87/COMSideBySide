@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<asmv1:assembly
+  xmlns="urn:schemas-microsoft-com:asm.v1"
+  xmlns:asmv1="urn:schemas-microsoft-com:asm.v1"
+  xmlns:asmv2="urn:schemas-microsoft-com:asm.v2"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  manifestVersion="1.0">
+  <assemblyIdentity
+    type="win32"
+    name="CommonInterop"
+    version="1.0.0.0"
+    publicKeyToken="" />
+  
+  
+<!--  <file name="CommonInterop.dll">-->
+
+    <clrClass
+      clsid="{24484884-DAAE-4B24-B0BD-C7B9AEB3D70D}"
+      progid="CommonInterop.ComInt32.Dummy"
+      name="CommonInterop.ComInt32.Dummy"
+      threadingModel="Both" 
+      tlbid="{E0A8B46A-ECBC-4146-8FC7-9F169286FC4C}"
+      runtimeVersion="v4.0.30319" />
+
+
+
+
+
+
+
+
+
+
+
+  <!--  </file>-->
+
+
+<!--    <comInterfaceExternalProxyStub name="CommonInterop.ComInt32.IComInt32List" -->
+<!--                                   iid="{582F3F32-A046-46BC-AB0A-B36E63B21D53}" -->
+<!--                                   tlbid="{E0A8B46A-ECBC-4146-8FC7-9F169286FC4C}" proxyStubClsid32='{00020424-0000-0000-C000-000000000046}'>-->
+<!--      -->
+<!--    </comInterfaceExternalProxyStub>-->
+<!--  -->
+<!--    <comInterfaceExternalProxyStub name="CommonInterop.ComInt32.IComInt32ListReadonly"-->
+<!--                                 iid="{B2BC682F-1097-4A74-AFEF-1E320196AF8C}"-->
+<!--                                 tlbid="{E0A8B46A-ECBC-4146-8FC7-9F169286FC4C}" proxyStubClsid32='{00020424-0000-0000-C000-000000000046}' >-->
+<!--  -->
+<!--    </comInterfaceExternalProxyStub>-->
+<!--  -->
+<!--    <comInterfaceExternalProxyStub name="CommonInterop.ComInt32.IDummy"-->
+<!--                                 iid="{C9E9107F-017D-4C63-BA8B-85F51ED10EA4}"-->
+<!--                                 tlbid="{E0A8B46A-ECBC-4146-8FC7-9F169286FC4C}" proxyStubClsid32='{00020424-0000-0000-C000-000000000046}' >-->
+<!--  -->
+<!--    </comInterfaceExternalProxyStub>-->
+
+<!---->
+<!--  <file name="CommonInterop.tlb">-->
+<!--    <typelib tlbid="{E0A8B46A-ECBC-4146-8FC7-9F169286FC4C}" version="1.0.0.0" />-->
+<!--  </file>-->
+
+  <!--  <clrClass-->
+  <!--    clsid="{582F3F32-A046-46BC-AB0A-B36E63B21D53}"-->
+  <!--    progid="CommonInterop.ComInt32.IComInt32List"-->
+  <!--    name="CommonInterop.ComInt32.IComInt32List"-->
+  <!--    threadingModel="Both" tlbid = "{E0A8B46A-ECBC-4146-8FC7-9F169286FC4C}"-->
+  <!--    runtimeVersion="v4.0.30319" />-->
+  <!---->
+  <!--  <clrClass-->
+  <!--    clsid="{B2BC682F-1097-4A74-AFEF-1E320196AF8C}"-->
+  <!--    progid="CommonInterop.ComInt32.IComInt32ListReadonly"-->
+  <!--    name="CommonInterop.ComInt32.IComInt32ListReadonly"-->
+  <!--    threadingModel="Both" tlbid = "{E0A8B46A-ECBC-4146-8FC7-9F169286FC4C}"-->
+  <!--    runtimeVersion="v4.0.30319" />-->
+  <!---->
+  <!--  <clrClass-->
+  <!--    clsid="{C9E9107F-017D-4C63-BA8B-85F51ED10EA4}"-->
+  <!--    progid="CommonInterop.ComInt32.IDummy"-->
+  <!--    name="CommonInterop.ComInt32.IDummy"-->
+  <!--    threadingModel="Both" tlbid = "{E0A8B46A-ECBC-4146-8FC7-9F169286FC4C}"-->
+  <!--    runtimeVersion="v4.0.30319" />-->
+  <!---->
+  <!--  <file name="CommonInterop.dll" />-->
+
+
+
+</asmv1:assembly>

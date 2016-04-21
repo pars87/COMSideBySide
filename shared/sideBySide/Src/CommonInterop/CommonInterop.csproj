@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{604AFF0D-1510-4841-AC86-18C7F13623E2}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CommonInterop</RootNamespace>
+    <AssemblyName>CommonInterop</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Run\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Win32Resource>obj\CommonInterop.res</Win32Resource>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>..\..\Run\Debug\</OutputPath>
+    <RegisterForComInterop>false</RegisterForComInterop>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>..\..\Run\Debug\</OutputPath>
+    <RegisterForComInterop>false</RegisterForComInterop>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ComInt32\ComInterop.cs" />
+    <Compile Include="ComInt32\IComInterop.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CommonInterop.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Key.snk">
+      <Link>Key.snk</Link>
+    </None>
+    <None Include="CommonInterop.manifest">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(ProgramFiles)\MSBuild\StyleCop\v4.7\StyleCop.targets" Condition="Exists('$(ProgramFiles)\MSBuild\StyleCop\v4.7\StyleCop.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <Target Name="BeforeCompile">
+    <CallTarget Targets="CompileResource" />
+  </Target>
+  <Target Name="AfterBuild">
+    <CallTarget Targets="ExportTypeLibrary" />
+    <CallTarget Targets="CheckManifest" />
+  </Target>
+  <!--
+  Ekstra byggemål (target) for at bygge ressourcefil og udtrække typebibliotek.
+  Angivelse af "Inputs" og "Outputs" gør, at det kun sker, hvis filerne er
+  mangler eller er ændrede.
+  -->
+  <PropertyGroup>
+    <ManifestCreator>..\..\..\..\tools\ManifestCreator\Run\ManifestCreator.exe</ManifestCreator>
+  </PropertyGroup>
+  <!--
+  Sætter paths op til tools benyttet i andre targets.
+  -->
+  <Import Project="..\..\..\..\tools\Build\MSBuildTargets\ToolsPaths.targets" />
+  <!--
+  Dette byggemål bygger ressourcefilen, som siden skal inkluderes i DLL'en.
+  -->
+  <Target Name="CompileResource" Inputs="CommonInterop.manifest; CommonInterop.rc" Outputs="obj\CommonInterop.res" DependsOnTargets="GetToolsPaths">
+    <PropertyGroup>
+      <CompileResourceCommand><![CDATA["$(ResourceCompiler)" /nologo /r /fo "obj\CommonInterop.res" "$(ProjectDir)CommonInterop.rc"]]></CompileResourceCommand>
+    </PropertyGroup>
+    <Exec Command="$(CompileResourceCommand)" Outputs="obj\CommonInterop.res" />
+  </Target>
+  <!--
+  Dette byggemål genererer et typebibliotek for DLL'ens COM-interface.
+  -->
+  <Target Name="ExportTypeLibrary" Inputs="$(TargetPath)" Outputs="$(TargetDir)$(TargetName).tlb" DependsOnTargets="GetToolsPaths">
+    <PropertyGroup>
+      <TypeLibraryExporterCommand><![CDATA["$(TypeLibraryExporter)" /nologo "$(TargetPath)" /out:"$(TargetDir)$(TargetName).tlb"]]></TypeLibraryExporterCommand>
+    </PropertyGroup>
+    <Exec Command="$(TypeLibraryExporterCommand)" Outputs="$(TargetDir)$(TargetName).tlb" />
+  </Target>
+  <!--
+  Dette byggemål bygger manifestet på basis af DLL'en og sammenholder det med
+  det, som er bygget ind i DLL'en.
+  Det er en nødløsning, fordi det ikke lykkedes at inkludere byg af manifestet
+  i det automatiske byg.
+  Det medfører at også fitting.X.dll'en må kpoieres til obj folderen :-(
+  TODO: Find det ud af hvordan man kreerer manifestet.
+  -->
+  <Target Name="CheckManifest" Inputs="$(IntermediateOutputPath)$(AssemblyName).dll" Outputs="$(IntermediateOutputPath)$(AssemblyName).manifest">
+    <Message Text="Creating Manifest..." />
+    <Exec Command="&quot;$(ManifestCreator)&quot; -clr &quot;$(IntermediateOutputPath)$(AssemblyName).dll&quot;" />
+    <Message Text="Checking Manifest..." />
+    <Exec Command="fc.exe &quot;$(AssemblyName).manifest&quot; &quot;$(IntermediateOutputPath)$(AssemblyName).manifest&quot; &gt; $(IntermediateOutputPath)Manifest.compare" IgnoreExitCode="true">
+      <Output TaskParameter="ExitCode" PropertyName="ExitCode" />
+    </Exec>
+    <Warning Condition="$(ExitCode) != 0" Text="Manifest file is not up to date with code!" />
+  </Target>
+</Project>

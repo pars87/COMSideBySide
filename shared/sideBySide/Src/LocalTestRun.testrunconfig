@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestSettings name="Local" id="25d6d66e-5dac-462e-bf18-ba72ec27a1fb" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Description>These are default test settings for a local test run.</Description>
+  <Deployment enabled="false">
+    <DeploymentItem filename="..\..\..\CatalogData\Catalog_Widex.xml" />
+    <DeploymentItem filename="Widex.Fitting\FitLogic\Compressor\DSLLib\dslmio.dat" />
+    <DeploymentItem filename="Widex.Fitting\FitLogic\Compressor\DSLLib\DSLmio_C.dll" />
+    <DeploymentItem filename="Widex.Fitting\FitLogic\Compressor\NALLib\NAL-NL2.dll" />
+  </Deployment>
+  <Execution>
+    <TestTypeSpecific>
+      <UnitTestRunConfig testTypeId="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b">
+        <AssemblyResolution>
+          <TestDirectory useLoadContext="true" />
+        </AssemblyResolution>
+      </UnitTestRunConfig>
+    </TestTypeSpecific>
+    <AgentRule name="Execution Agents">
+    </AgentRule>
+  </Execution>
+</TestSettings>

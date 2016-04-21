@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{994AEE9A-F2C3-4ACB-9598-8286895FC9F9}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ScInteropTest</RootNamespace>
+    <AssemblyName>ScInteropTest</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>..\..\Run\Debug\</OutputPath>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>..\..\Run\Debug\</OutputPath>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Win32Resource>obj\ScInteropTest.res</Win32Resource>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="IUseCom.cs" />
+    <Compile Include="UseCom.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ScInteropTest.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Key.snk">
+      <Link>Key.snk</Link>
+    </None>
+    <None Include="ScInteropTest.manifest">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CommonInterop\CommonInterop.csproj">
+      <Project>{604AFF0D-1510-4841-AC86-18C7F13623E2}</Project>
+      <Name>CommonInterop</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <Target Name="BeforeCompile">
+    <CallTarget Targets="CompileResource" />
+  </Target>
+  <Target Name="AfterBuild">
+    <CallTarget Targets="ExportTypeLibrary" />
+    <CallTarget Targets="CheckManifest" />
+  </Target>
+  <!--
+  Ekstra byggemål (target) for at bygge ressourcefil og udtrække typebibliotek.
+  Angivelse af "Inputs" og "Outputs" gør, at det kun sker, hvis filerne er
+  mangler eller er ændrede.
+  -->
+  <PropertyGroup>
+    <ManifestCreator>..\..\..\..\tools\ManifestCreator\Run\ManifestCreator.exe</ManifestCreator>
+  </PropertyGroup>
+  <!--
+  Sætter paths op til tools benyttet i andre targets.
+  -->
+  <Import Project="..\..\..\..\tools\Build\MSBuildTargets\ToolsPaths.targets" />
+  <!--
+  Dette byggemål bygger ressourcefilen, som siden skal inkluderes i DLL'en.
+  -->
+  <Target Name="CompileResource" Inputs="CommonInterop.manifest; ScInteropTest.manifest; ScInteropTest.rc" Outputs="obj\ScInteropTest.res" DependsOnTargets="GetToolsPaths">
+    <PropertyGroup>
+      <CompileResourceCommand><![CDATA["$(ResourceCompiler)" /nologo /r /fo "obj\ScInteropTest.res" "$(ProjectDir)ScInteropTest.rc"]]></CompileResourceCommand>
+    </PropertyGroup>
+    <Exec Command="$(CompileResourceCommand)" Outputs="obj\ScInteropTest.res" />
+  </Target>
+  <!--
+  Dette byggemål genererer et typebibliotek for DLL'ens COM-interface.
+  -->
+  <Target Name="ExportTypeLibrary" Inputs="$(TargetPath)" Outputs="$(TargetDir)$(TargetName).tlb" DependsOnTargets="GetToolsPaths">
+    <PropertyGroup>
+      <TypeLibraryExporterCommand><![CDATA["$(TypeLibraryExporter)" "$(TargetPath)" /out:"$(TargetDir)$(TargetName).tlb"]]></TypeLibraryExporterCommand>
+    </PropertyGroup>
+    <Exec Command="$(TypeLibraryExporterCommand)" Outputs="$(TargetDir)$(TargetName).tlb" />
+  </Target>
+  <Target Name="CheckManifest" Inputs="$(IntermediateOutputPath)$(AssemblyName).dll" Outputs="$(IntermediateOutputPath)$(AssemblyName).manifest">
+    <Copy SourceFiles="$(OutputPath)\CommonInterop.dll" DestinationFolder="$(ProjectDir)obj\x86\$(ConfigurationName)" />
+    <Message Text="Creating Manifest..." />
+    <Exec Command="&quot;$(ManifestCreator)&quot; -clr &quot;$(IntermediateOutputPath)$(AssemblyName).dll&quot;" />
+    <Message Text="Checking Manifest..." />
+    <Exec Command="fc.exe &quot;$(AssemblyName).manifest&quot; &quot;$(IntermediateOutputPath)$(AssemblyName).manifest&quot; &gt; $(IntermediateOutputPath)Manifest.compare" IgnoreExitCode="true">
+      <Output TaskParameter="ExitCode" PropertyName="ExitCode" />
+    </Exec>
+    <Warning Condition="$(ExitCode) != 0" Text="Manifest file is not up to date with code!" />
+  </Target>
+</Project>

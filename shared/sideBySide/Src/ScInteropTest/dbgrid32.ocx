@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<assembly manifestVersion="1.0" xmlns="urn:schemas-microsoft-com:asm.v1">
+  <assemblyIdentity type="win32" name="dbgrid32.ocx" version="1.0.0.0" />
+  <file name="dbgrid32.ocx">
+     <typelib
+        tlbid="{E0A8B46A-ECBC-4146-8FC7-9F169286FC4C}"
+        version="1.0"
+        helpdir=""/>
+    <comClass progid="CommonInterop.ComInt32.ComInt32List"
+       clsid="{7A94896F-7945-42A9-AEC5-D1A7A915EF57}"
+       description="DBGrid  Control" />
+  </file>
+</assembly>

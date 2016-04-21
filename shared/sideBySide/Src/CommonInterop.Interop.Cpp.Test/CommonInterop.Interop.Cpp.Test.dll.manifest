@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<asmv1:assembly
+  xmlns="urn:schemas-microsoft-com:asm.v1"
+  xmlns:asmv1="urn:schemas-microsoft-com:asm.v1"
+  xmlns:asmv2="urn:schemas-microsoft-com:asm.v2"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  manifestVersion="1.0">
+
+  <dependency>
+    <dependentAssembly>
+      <assemblyIdentity
+        type="win32"
+        name="ScInteropTest"
+        version="1.0.0.0"
+        publicKeyToken="" />
+    </dependentAssembly>
+  </dependency>
+
+  <!--<dependency>
+    <dependentAssembly>
+      <assemblyIdentity
+        type="win32"
+        name="CommonInterop"
+        version="1.0.0.0"
+        publicKeyToken="" />
+    </dependentAssembly>
+  </dependency>-->
+
+<!--  <file name="ScInteropTest.tlb" >-->
+<!--  </file>-->
+
+</asmv1:assembly>

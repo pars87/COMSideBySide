@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<asmv1:assembly
+  xmlns="urn:schemas-microsoft-com:asm.v1"
+  xmlns:asmv1="urn:schemas-microsoft-com:asm.v1"
+  xmlns:asmv2="urn:schemas-microsoft-com:asm.v2"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  manifestVersion="1.0">
+  <assemblyIdentity
+    type="win32"
+    name="ScInteropTest"
+    version="1.0.0.0"
+    publicKeyToken="" />
+
+<!--  <file name="ScInteropTest.dll">-->
+  <clrClass
+    clsid="{A20AE549-F6F9-49C3-BA3A-18121CFF2959}"
+      progid="ScInteropTest.UseCom"
+      name="ScInteropTest.UseCom"
+      threadingModel="Both" tlbid="{65b36163-228d-4073-b725-48b66e82ba99}"
+      runtimeVersion="v4.0.30319" />
+<!--  </file>-->
+
+  <!--<file name="ScInteropTest.dll">
+    <clrClass
+      clsid="{582F3F32-A046-46BC-AB0A-B36E63B21D53}"
+      threadingModel="Both"
+      tlbid="{E0A8B46A-ECBC-4146-8FC7-9F169286FC4C}" progid="CommonInterop.ComInt32.IComInt32List" />
+  </file>-->
+
+  <!---->
+  <!--  <file name="CommonInterop.dll">-->
+  <!--    <typelib tlbid="{E0A8B46A-ECBC-4146-8FC7-9F169286FC4C}"-->
+  <!--      version="1.0.0.0" />-->
+  <!--  </file>-->
+
+  <dependency>
+    <dependentAssembly>
+      <assemblyIdentity
+        type="win32"
+        name="CommonInterop"
+        version="1.0.0.0"
+        publicKeyToken="" />
+    </dependentAssembly>
+  </dependency>
+
+
+
+
+
+<!--  <file name='C:\AC\ComUltimateTemplate\shared\fitting\Run\Debug\ScInteropTest.tlb'>-->
+<!--    <typelib tlbid='{65B36163-228D-4073-B725-48B66E82BA99}' version='1.0' flags='' helpdir=''/>-->
+<!--    <comClass progid='ScInteropTest.SomeFactory' clsid='{9E880F8B-8398-404D-95C5-A999D08A3551}' threadingModel='Apartment'/>-->
+<!--  </file>-->
+<!--  <comInterfaceExternalProxyStub-->
+<!--    name='IScorpionType'-->
+<!--    iid='{49820EE2-72E1-4678-B6AD-5DDB1EC083D8}'-->
+<!--    proxyStubClsid32='{00020424-0000-0000-C000-000000000046}'-->
+<!--    baseInterface='{00000000-0000-0000-C000-000000000046}'-->
+<!--    tlbid = '{65B36163-228D-4073-B725-48B66E82BA99}'/>-->
+<!--  <comInterfaceExternalProxyStub-->
+<!--    name='ISomeFactory'-->
+<!--    iid='{E98002AE-F8AB-478F-94D1-FA9F7D74EEB5}'-->
+<!--    proxyStubClsid32='{00020424-0000-0000-C000-000000000046}'-->
+<!--    baseInterface='{00000000-0000-0000-C000-000000000046}'-->
+<!--    tlbid = '{65B36163-228D-4073-B725-48B66E82BA99}'/>-->
+
+
+
+
+  <!--  <file name="CommonInterop.tlb">-->
+  <!--    <typelib-->
+  <!--      tlbid="{E0A8B46A-ECBC-4146-8FC7-9F169286FC4C}"-->
+  <!--      version="1.0.0.0" />-->
+  <!--  </file>-->
+  <!---->
+  <!--  <file name="CommonInterop.dll">-->
+  <!--    <clrClass-->
+  <!--      clsid="{B531216B-5243-48BD-A126-0AAD7DB05490}"-->
+  <!--      progid="CommonInterop.ComInt32.Dummy"-->
+  <!--      name="CommonInterop.ComInt32.Dummy"-->
+  <!--      threadingModel="Both"-->
+  <!--      tlbid="{E0A8B46A-ECBC-4146-8FC7-9F169286FC4C}"-->
+  <!--      runtimeVersion="v4.0.30319" />-->
+  <!--  </file>-->
+
+
+  <!--<file name="CommonInterop.tlb">
+    <comInterfaceProxyStub name="CommonInterop.ComInt32.IComInt32List"
+                           iid="{582F3F32-A046-46BC-AB0A-B36E63B21D53}"
+                           tlbid="{E0A8B46A-ECBC-4146-8FC7-9F169286FC4C}" >
+
+    </comInterfaceProxyStub>
+
+    <comInterfaceProxyStub name="CommonInterop.ComInt32.IComInt32ListReadonly"
+                                 iid="{B2BC682F-1097-4A74-AFEF-1E320196AF8C}"
+                                 tlbid="{E0A8B46A-ECBC-4146-8FC7-9F169286FC4C}" >
+
+    </comInterfaceProxyStub>
+
+    <comInterfaceProxyStub name="CommonInterop.ComInt32.IDummy"
+                                 iid="{C9E9107F-017D-4C63-BA8B-85F51ED10EA4}"
+                                 tlbid="{E0A8B46A-ECBC-4146-8FC7-9F169286FC4C}" >
+
+    </comInterfaceProxyStub>
+  </file>-->
+
+</asmv1:assembly>

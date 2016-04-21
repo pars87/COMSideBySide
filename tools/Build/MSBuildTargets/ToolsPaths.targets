@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003"
+  ToolsVersion="4.0" InitialTargets="GetToolsPaths">
+
+  <!--
+  Properties til brug ved kald af tlibimp.exe. BDS miljøvariablen sættes
+  normalt af Delphi IDE'et, men defaultes her til Delphi XE, hvis den ikke er
+  sat. Således bliver det muligt at eksekvere fra kommandolinjen uden først
+  at køre rsvars.bat.
+  -->
+  <PropertyGroup Condition="'$(BDS)' == ''">
+    <BDS>$(MSBuildProgramFiles32)\Embarcadero\RAD Studio\8.0</BDS>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Tlibimp><![CDATA["$(BDS)\bin\tlibimp.exe"]]></Tlibimp>
+  </PropertyGroup>
+
+  <Target Name="GetToolsPaths">
+    <GetFrameworkSdkPath Condition="$(SdkPath) == ''">
+      <Output TaskParameter="FrameworkSdkVersion40Path" PropertyName="SdkPath" />
+    </GetFrameworkSdkPath>
+    <PropertyGroup>
+      <WindowsKits80>$(ProgramFiles)\Windows Kits\8.0\</WindowsKits80>
+      <Sdk70A>$(ProgramFiles)\Microsoft SDKs\Windows\v7.0A\bin\</Sdk70A>
+      <ResourceCompiler Condition="'$(ResourceCompiler)' == '' AND Exists('$(SdkPath)bin\rc.exe')">$(SdkPath)bin\rc.exe</ResourceCompiler>
+      <ResourceCompiler Condition="'$(ResourceCompiler)' == '' AND Exists('$(WindowsKits80)bin\x86\rc.exe')">$(WindowsKits80)bin\x86\rc.exe</ResourceCompiler>
+      <ManifestCompiler Condition="'$(ManifestCompiler)' == '' AND Exists('$(SdkPath)bin\mc.exe')">$(SdkPath)bin\mc.exe</ManifestCompiler>
+      <ManifestCompiler Condition="'$(ManifestCompiler)' == '' AND Exists('$(WindowsKits80)bin\x86\mc.exe')">$(WindowsKits80)bin\x86\mc.exe</ManifestCompiler>
+      <TypeLibraryExporter Condition="'$(TypeLibraryExporter)' == '' AND Exists('$(SdkPath)bin\NETFX 4.0 Tools\tlbexp.exe')">$(SdkPath)bin\NETFX 4.0 Tools\tlbexp.exe</TypeLibraryExporter>
+      <TypeLibraryExporter Condition="'$(TypeLibraryExporter)' == '' AND Exists('$(Sdk70A)tlbexp.exe')">$(Sdk70A)tlbexp.exe</TypeLibraryExporter>
+      <Ildasm Condition="'$(Ildasm)' == '' AND Exists('$(SdkPath)bin\NETFX 4.0 Tools\ildasm.exe')">$(SdkPath)bin\NETFX 4.0 Tools\ildasm.exe</Ildasm>
+      <Ildasm Condition="'$(Ildasm)' == '' AND Exists('$(Sdk70A)ildasm.exe')">$(Sdk70A)ildasm.exe</Ildasm>
+      <ManifestTool Condition="'$(ManifestTool)' == '' AND Exists('$(SdkPath)bin\mt.exe')">$(SdkPath)bin\mt.exe</ManifestTool>
+      <ManifestTool Condition="'$(ManifestTool)' == '' AND Exists('$(WindowsKits80)bin\x86\mt.exe')">$(WindowsKits80)\bin\x86\mt.exe</ManifestTool>
+    </PropertyGroup>
+  </Target>
+</Project>

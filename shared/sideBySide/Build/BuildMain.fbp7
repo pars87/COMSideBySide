@@ -1,0 +1,2483 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VSXML>
+  <Object Class="TFBProject" XMLID="{FDF6D4BB-4706-4565-985D-F11C475B259B}">
+    <Property MultiValue="0" name="EncryptedEditPassword" type="string"></Property>
+    <Property MultiValue="0" name="Name" type="string"></Property>
+    <Property MultiValue="0" name="ProjectAuthor" type="string"></Property>
+    <Property MultiValue="0" name="ProjectID" type="string">{F4AD92A3-FED9-43DF-868F-7CA264C2BBDE}</Property>
+    <Property MultiValue="0" name="ProjectNotes" type="string"></Property>
+    <Object Class="TFBActionListCollection" XMLID="{4A5D7C7A-7B8C-44BF-954F-C8C733ACE2A4}">
+      <Object Class="TFBActionList" XMLID="{D646C777-A903-4532-827D-24C8F518E9B1}">
+        <Property name="IsFailure" type="Boolean">False</Property>
+        <Property name="IsMain" type="Boolean">True</Property>
+        <Property MultiValue="0" name="Name" type="string">Main</Property>
+        <Property MultiValue="0" name="UniqueID" type="string">{3FABDD2E-B15D-483A-ADF1-EDF59FD9BD5D}</Property>
+        <Object Class="TFBAction" XMLID="{1263A3B2-AE90-47C4-965E-992A8B8F16C0}">
+          <Property MultiValue="0" name="ActionComment" type="string"></Property>
+          <Property MultiValue="0" name="ActionDescription" type="string">FinalBuilderAction</Property>
+          <Property name="ActionTextColor" type="Cardinal">0</Property>
+          <Property MultiValue="0" name="ActionTypeID" type="string"></Property>
+          <Property name="Enabled" type="Boolean">True</Property>
+          <Property name="ExpandActionLogTitle" type="Boolean">True</Property>
+          <Property name="HideActionFromLog" type="Boolean">False</Property>
+          <Property name="IgnoreFailure" type="Boolean">False</Property>
+          <Property name="Locked" type="Boolean">False</Property>
+          <Property name="LogActionProperties" type="Boolean">False</Property>
+          <Property MultiValue="0" name="LogToVariable" type="TVariableName"></Property>
+          <Property name="MaxRetryAttempts" type="Cardinal">0</Property>
+          <Property name="PauseInterval" type="Cardinal">0</Property>
+          <Property name="RetryPauseInterval" type="Cardinal">1000</Property>
+          <Property name="SuppressStatusMessages" type="Boolean">False</Property>
+          <Object Class="TFBSetBuildStatusMessage" XMLID="{6982F2F5-814E-46BF-9F60-FA562AEE0910}">
+            <Property MultiValue="0" name="ActionComment" type="string"></Property>
+            <Property MultiValue="1" name="ActionDescription" type="string">
+              <![CDATA[Set Build Status Message to &quot;Build af Fitting&quot;]]>
+            </Property>
+            <Property name="ActionTextColor" type="Cardinal">0</Property>
+            <Property MultiValue="0" name="ActionTypeID" type="string"></Property>
+            <Property name="Enabled" type="Boolean">True</Property>
+            <Property name="ExpandActionLogTitle" type="Boolean">True</Property>
+            <Property name="HideActionFromLog" type="Boolean">False</Property>
+            <Property name="IgnoreFailure" type="Boolean">True</Property>
+            <Property name="IsBold" type="Boolean">True</Property>
+            <Property name="Locked" type="Boolean">False</Property>
+            <Property name="LogActionProperties" type="Boolean">False</Property>
+            <Property MultiValue="0" name="LogToVariable" type="TVariableName"></Property>
+            <Property name="MaxRetryAttempts" type="Cardinal">0</Property>
+            <Property name="PauseInterval" type="Cardinal">0</Property>
+            <Property name="RetryPauseInterval" type="Cardinal">1000</Property>
+            <Property name="SetBold" type="Boolean">True</Property>
+            <Property name="SetColour" type="Boolean">True</Property>
+            <Property MultiValue="1" name="StatusMessage" type="string">
+              <![CDATA[Build af Fitting]]>
+            </Property>
+            <Property name="SuppressStatusMessages" type="Boolean">False</Property>
+            <Property name="TheColour" type="TColor">0</Property>
+          </Object>
+          <Object Class="TRunActionListAction" XMLID="{BCEB5D34-2E15-4E1D-83AA-EE5BA55A920C}">
+            <Property MultiValue="0" name="ActionComment" type="string"></Property>
+            <Property MultiValue="1" name="ActionDescription" type="string">
+              <![CDATA[Run Action List [ InteractiveInit ]]]>
+            </Property>
+            <Property MultiValue="0" name="ActionListID" type="string">{8D7C39CD-1B6B-42E6-9FE4-43F67BEF10C1}</Property>
+            <Property name="ActionTextColor" type="Cardinal">0</Property>
+            <Property MultiValue="0" name="ActionTypeID" type="string"></Property>
+            <Property name="Enabled" type="Boolean">True</Property>
+            <Property name="ExpandActionLogTitle" type="Boolean">True</Property>
+            <Property name="FailIfActionListEmpty" type="Boolean">False</Property>
+            <Property name="HideActionFromLog" type="Boolean">False</Property>
+            <Property name="IgnoreFailure" type="Boolean">False</Property>
+            <Property name="Locked" type="Boolean">False</Property>
+            <Property name="LogActionProperties" type="Boolean">False</Property>
+            <Property MultiValue="0" name="LogToVariable" type="TVariableName"></Property>
+            <Property name="MaxRetryAttempts" type="Cardinal">0</Property>
+            <Property name="Parameters" type="TStrings">
+              <![CDATA[]]>
+            </Property>
+            <Property name="PauseInterval" type="Cardinal">0</Property>
+            <Property name="RetryPauseInterval" type="Cardinal">1000</Property>
+            <Property name="SuppressStatusMessages" type="Boolean">False</Property>
+          </Object>
+          <Object Class="TRunActionListAction" XMLID="{411D527E-E73D-41DB-AEBD-DC0C02D2AC51}">
+            <Property MultiValue="0" name="ActionComment" type="string"></Property>
+            <Property MultiValue="1" name="ActionDescription" type="string">
+              <![CDATA[Run Action List [ Init ]]]>
+            </Property>
+            <Property MultiValue="0" name="ActionListID" type="string">{754A43B1-DE8D-4B47-BBA6-783561CA3878}</Property>
+            <Property name="ActionTextColor" type="Cardinal">0</Property>
+            <Property MultiValue="0" name="ActionTypeID" type="string"></Property>
+            <Property name="Enabled" type="Boolean">True</Property>
+            <Property name="ExpandActionLogTitle" type="Boolean">True</Property>
+            <Property name="FailIfActionListEmpty" type="Boolean">False</Property>
+            <Property name="HideActionFromLog" type="Boolean">False</Property>
+            <Property name="IgnoreFailure" type="Boolean">False</Property>
+            <Property name="Locked" type="Boolean">False</Property>
+            <Property name="LogActionProperties" type="Boolean">False</Property>
+            <Property MultiValue="0" name="LogToVariable" type="TVariableName"></Property>
+            <Property name="MaxRetryAttempts" type="Cardinal">0</Property>
+            <Property name="Parameters" type="TStrings">
+              <![CDATA[]]>
+            </Property>
+            <Property name="PauseInterval" type="Cardinal">0</Property>
+            <Property name="RetryPauseInterval" type="Cardinal">1000</Property>
+            <Property name="SuppressStatusMessages" type="Boolean">False</Property>
+          </Object>
+          <Object Class="TRunActionListAction" XMLID="{162E0B53-812E-481E-A8F5-0BD748ECD721}">
+            <Property MultiValue="0" name="ActionComment" type="string"></Property>
+            <Property MultiValue="1" name="ActionDescription" type="string">
+              <![CDATA[Run Action List [ Prepare ]]]>
+            </Property>
+            <Property MultiValue="0" name="ActionListID" type="string">{0BA00AA6-F7FA-461D-AB38-D0043EE2397A}</Property>
+            <Property name="ActionTextColor" type="Cardinal">0</Property>
+            <Property MultiValue="0" name="ActionTypeID" type="string"></Property>
+            <Property name="Enabled" type="Boolean">True</Property>
+            <Property name="ExpandActionLogTitle" type="Boolean">True</Property>
+            <Property name="FailIfActionListEmpty" type="Boolean">False</Property>
+            <Property name="HideActionFromLog" type="Boolean">False</Property>
+            <Property name="IgnoreFailure" type="Boolean">False</Property>
+            <Property name="Locked" type="Boolean">False</Property>
+            <Property name="LogActionProperties" type="Boolean">False</Property>
+            <Property MultiValue="0" name="LogToVariable" type="TVariableName"></Property>
+            <Property name="MaxRetryAttempts" type="Cardinal">0</Property>
+            <Property name="Parameters" type="TStrings">
+              <![CDATA[]]>
+            </Property>
+            <Property name="PauseInterval" type="Cardinal">0</Property>
+            <Property name="RetryPauseInterval" type="Cardinal">1000</Property>
+            <Property name="SuppressStatusMessages" type="Boolean">False</Property>
+          </Object>
+          <Object Class="TRunActionListAction" XMLID="{5FDF4822-2EAF-4F29-B2D2-1B7F2D57AD80}">
+            <Property MultiValue="0" name="ActionComment" type="string"></Property>
+            <Property MultiValue="1" name="ActionDescription" type="string">
+              <![CDATA[Run Action List [Compile ]]]>
+            </Property>
+            <Property MultiValue="0" name="ActionListID" type="string">{0B33322A-E4BE-4805-8566-C843F08F002B}</Property>
+            <Property name="ActionTextColor" type="Cardinal">0</Property>
+            <Property MultiValue="0" name="ActionTypeID" type="string"></Property>
+            <Property MultiValue="1" name="Description" type="string">
+              <![CDATA[Run Action List [Compile ]]]>
+            </Property>
+            <Property name="Enabled" type="Boolean">True</Property>
+            <Property name="ExpandActionLogTitle" type="Boolean">True</Property>
+            <Property name="FailIfActionListEmpty" type="Boolean">False</Property>
+            <Property name="HideActionFromLog" type="Boolean">False</Property>
+            <Property name="IgnoreFailure" type="Boolean">False</Property>
+            <Property name="Locked" type="Boolean">False</Property>
+            <Property name="LogActionProperties" type="Boolean">False</Property>
+            <Property MultiValue="0" name="LogToVariable" type="TVariableName"></Property>
+            <Property name="MaxRetryAttempts" type="Cardinal">0</Property>
+            <Property name="Parameters" type="TStrings">
+              <![CDATA[]]>
+            </Property>
+            <Property name="PauseInterval" type="Cardinal">0</Property>
+            <Property name="RetryPauseInterval" type="Cardinal">1000</Property>
+            <Property name="SuppressStatusMessages" type="Boolean">False</Property>
+          </Object>
+          <Object Class="TFBIfThenAction" XMLID="{7001E692-1A9C-4FEC-8316-81FD7AE006CF}">
+            <Property MultiValue="0" name="ActionComment" type="string"></Property>
+            <Property MultiValue="1" name="ActionDescription" type="string">
+              <![CDATA[If [UNITTEST]  is in CSV  [%BuildParams%]]]>
+            </Property>
+            <Property name="ActionTextColor" type="Cardinal">0</Property>
+            <Property MultiValue="0" name="ActionTypeID" type="string"></Property>
+            <Property name="Enabled" type="Boolean">True</Property>
+            <Property name="ExpandActionLogTitle" type="Boolean">False</Property>
+            <Property name="HideActionFromLog" type="Boolean">False</Property>
+            <Property name="IgnoreFailure" type="Boolean">False</Property>
+            <Property MultiValue="1" name="LHSStorageString" type="string">
+              <![CDATA[UNITTEST
+]]>
+            </Property>
+            <Property name="Locked" type="Boolean">False</Property>
+            <Property name="LogActionProperties" type="Boolean">False</Property>
+            <Property MultiValue="0" name="LogToVariable" type="TVariableName"></Property>
+            <Property name="MaxRetryAttempts" type="Cardinal">0</Property>
+            <Property MultiValue="1" name="OperatorsStorageString" type="string">
+              <![CDATA[ is in CSV 
+]]>
+            </Property>
+            <Property name="PauseInterval" type="Cardinal">0</Property>
+            <Property name="ResultInLogTitle" type="Boolean">True</Property>
+            <Property name="RetryPauseInterval" type="Cardinal">1000</Property>
+            <Property MultiValue="1" name="RHSStorageString" type="string">
+              <![CDATA[%BuildParams%
+]]>
+            </Property>
+            <Property name="ShortCircuitEvaluation" type="Boolean">True</Property>
+            <Property name="SuppressStatusMessages" type="Boolean">False</Property>
+            <Property name="TermJoiner" type="TFBIfTermJoiner">jwOr</Property>
+            <Object Class="TIncludeProjectAction" XMLID="{48BFD428-F4AB-4515-9345-4E39550361D6}">
+              <Property MultiValue="0" name="ActionComment" type="string"></Property>
+              <Property MultiValue="1" name="ActionDescription" type="string">
+                <![CDATA[Include Project - [ %BuildCommon% : Unittest.mstest ]]]>
+              </Property>
+              <Property name="ActionTextColor" type="Cardinal">0</Property>
+              <Property MultiValue="0" name="ActionTypeID" type="string"></Property>
+              <Property name="Enabled" type="Boolean">True</Property>
+              <Property name="ExpandActionLogTitle" type="Boolean">True</Property>
+              <Property name="FailIfUndefinedVars" type="Boolean">True</Property>
+              <Property name="HideActionFromLog" type="Boolean">False</Property>
+              <Property name="IgnoreFailure" type="Boolean">False</Property>
+              <Property name="Locked" type="Boolean">False</Property>
+              <Property name="LogActionProperties" type="Boolean">False</Property>
+              <Property MultiValue="0" name="LogToVariable" type="TVariableName"></Property>
+              <Property name="MaxRetryAttempts" type="Cardinal">0</Property>
+              <Property name="Parameters" type="TStrings">
+                <![CDATA[SearchRoot=%Root%
+Configuration=%Configuration%
+SrcDir=%SrcDir%
+]]>
+              </Property>
+              <Property name="PauseInterval" type="Cardinal">0</Property>
+              <Property MultiValue="0" name="ProjectFile" type="string">%BuildCommon%</Property>
+              <Property name="ReloadEnvironmentVars" type="Boolean">True</Property>
+              <Property name="RetryPauseInterval" type="Cardinal">1000</Property>
+              <Property MultiValue="0" name="RunActionList" type="string">Unittest.mstest</Property>
+              <Property name="ShareHostVariableNameSpace" type="Boolean">False</Property>
+              <Property name="SuppressStatusMessages" type="Boolean">False</Property>
+            </Object>
+          </Object>
+          <Object Class="TFBIfThenAction" XMLID="{72064E77-9F43-4E2C-ADD3-8D743615AD27}">
+            <Property MultiValue="0" name="ActionComment" type="string"></Property>
+            <Property MultiValue="1" name="ActionDescription" type="string">
+              <![CDATA[If [COVERAGE]  is in CSV  [%BuildParams%]]]>
+            </Property>
+            <Property name="ActionTextColor" type="Cardinal">0</Property>
+            <Property MultiValue="0" name="ActionTypeID" type="string"></Property>
+            <Property name="Enabled" type="Boolean">True</Property>
+            <Property name="ExpandActionLogTitle" type="Boolean">False</Property>
+            <Property name="HideActionFromLog" type="Boolean">False</Property>
+            <Property name="IgnoreFailure" type="Boolean">False</Property>
+            <Property MultiValue="1" name="LHSStorageString" type="string">
+              <![CDATA[COVERAGE
+]]>
+            </Property>
+            <Property name="Locked" type="Boolean">False</Property>
+            <Property name="LogActionProperties" type="Boolean">False</Property>
+            <Property MultiValue="0" name="LogToVariable" type="TVariableName"></Property>
+            <Property name="MaxRetryAttempts" type="Cardinal">0</Property>
+            <Property MultiValue="1" name="OperatorsStorageString" type="string">
+              <![CDATA[ is in CSV 
+]]>
+            </Property>
+            <Property name="PauseInterval" type="Cardinal">0</Property>
+            <Property name="ResultInLogTitle" type="Boolean">True</Property>
+            <Property name="RetryPauseInterval" type="Cardinal">1000</Property>
+            <Property MultiValue="1" name="RHSStorageString" type="string">
+              <![CDATA[%BuildParams%
+]]>
+            </Property>
+            <Property name="ShortCircuitEvaluation" type="Boolean">True</Property>
+            <Property name="SuppressStatusMessages" type="Boolean">False</Property>
+            <Property name="TermJoiner" type="TFBIfTermJoiner">jwOr</Property>
+            <Object Class="TIncludeProjectAction" XMLID="{91AB4269-2F55-4C4C-842E-BFCBC31C0867}">
+              <Property MultiValue="0" name="ActionComment" type="string"></Property>
+              <Property MultiValue="1" name="ActionDescription" type="string">
+                <![CDATA[Include Project - [ %BuildCommon% : Coverage ]]]>
+              </Property>
+              <Property name="ActionTextColor" type="Cardinal">0</Property>
+              <Property MultiValue="0" name="ActionTypeID" type="string"></Property>
+              <Property name="Enabled" type="Boolean">True</Property>
+              <Property name="ExpandActionLogTitle" type="Boolean">True</Property>
+              <Property name="FailIfUndefinedVars" type="Boolean">True</Property>
+              <Property name="HideActionFromLog" type="Boolean">False</Property>
+              <Property name="IgnoreFailure" type="Boolean">False</Property>
+              <Property name="Locked" type="Boolean">False</Property>
+              <Property name="LogActionProperties" type="Boolean">False</Property>
+              <Property MultiValue="0" name="LogToVariable" type="TVariableName"></Property>
+              <Property name="MaxRetryAttempts" type="Cardinal">0</Property>
+              <Property name="Parameters" type="TStrings">
+                <![CDATA[SearchRoot=%Root%
+Configuration=%Configuration%
+SrcDir=%SrcDir%
+ReleaseProjectRoot=%ReleaseProjectRoot%
+ReleasePath=%ReleasePath%
+ProductVersion=%ProductVersion%
+BuildType=%BuildType%
+]]>
+              </Property>
+              <Property name="PauseInterval" type="Cardinal">0</Property>
+              <Property MultiValue="0" name="ProjectFile" type="string">%BuildCommon%</Property>
+              <Property name="ReloadEnvironmentVars" type="Boolean">True</Property>
+              <Property name="RetryPauseInterval" type="Cardinal">1000</Property>
+              <Property MultiValue="0" name="RunActionList" type="string">Coverage</Property>
+              <Property name="ShareHostVariableNameSpace" type="Boolean">False</Property>
+              <Property name="SuppressStatusMessages" type="Boolean">False</Property>
+            </Object>
+          </Object>
+          <Object Class="TRunActionListAction" XMLID="{2315BBDE-2970-4C40-A756-55403F26F342}">
+            <Property MultiValue="0" name="ActionComment" type="string"></Property>
+            <Property MultiValue="1" name="ActionDescription" type="string">
+              <![CDATA[Run Action List [ Finalize ]]]>
+            </Property>
+            <Property MultiValue="0" name="ActionListID" type="string">{91355BA9-F936-4915-8537-1AE6D6D1ABAF}</Property>
+            <Property name="ActionTextColor" type="Cardinal">0</Property>
+            <Property MultiValue="0" name="ActionTypeID" type="string"></Property>
+            <Property name="Enabled" type="Boolean">True</Property>
+            <Property name="ExpandActionLogTitle" type="Boolean">True</Property>
+            <Property name="FailIfActionListEmpty" type="Boolean">False</Property>
+            <Property name="HideActionFromLog" type="Boolean">False</Property>
+            <Property name="IgnoreFailure" type="Boolean">False</Property>
+            <Property name="Locked" type="Boolean">False</Property>
+            <Property name="LogActionProperties" type="Boolean">False</Property>
+            <Property MultiValue="0" name="LogToVariable" type="TVariableName"></Property>
+            <Property name="MaxRetryAttempts" type="Cardinal">0</Property>
+            <Property name="Parameters" type="TStrings">
+              <![CDATA[]]>
+            </Property>
+            <Property name="PauseInterval" type="Cardinal">0</Property>
+            <Property name="RetryPauseInterval" type="Cardinal">1000</Property>
+            <Property name="SuppressStatusMessages" type="Boolean">False</Property>
+          </Object>
+        </Object>
+        <Object Class="TFBActionListParametersCollection" XMLID="{C1F3D1E1-FF60-47EF-821C-06F205670E8A}"/>
+      </Object>
+      <Object Class="TFBActionList" XMLID="{E1E94792-873A-4995-BBA4-87D42E0C9E1D}">
+        <Property name="IsFailure" type="Boolean">True</Property>
+        <Property name="IsMain" type="Boolean">False</Property>
+        <Property MultiValue="0" name="Name" type="string">OnFailure</Property>
+        <Property MultiValue="0" name="UniqueID" type="string">{45FD8743-A654-49F4-A89E-45AECA58F9FB}</Property>
+        <Object Class="TFBAction" XMLID="{FB759F0E-E2A9-4A03-8117-5A1F0B19F552}">
+          <Property MultiValue="0" name="ActionComment" type="string"></Property>
+          <Property MultiValue="0" name="ActionDescription" type="string">FinalBuilderAction</Property>
+          <Property name="ActionTextColor" type="Cardinal">0</Property>
+          <Property MultiValue="0" name="ActionTypeID" type="string"></Property>
+          <Property name="Enabled" type="Boolean">True</Property>
+          <Property name="ExpandActionLogTitle" type="Boolean">True</Property>
+          <Property name="HideActionFromLog" type="Boolean">False</Property>
+          <Property name="IgnoreFailure" type="Boolean">False</Property>
+          <Property name="Locked" type="Boolean">False</Property>
+          <Property name="LogActionProperties" type="Boolean">False</Property>
+          <Property MultiValue="0" name="LogToVariable" type="TVariableName"></Property>
+          <Property name="MaxRetryAttempts" type="Cardinal">0</Property>
+          <Property name="PauseInterval" type="Cardinal">0</Property>
+          <Property name="RetryPauseInterval" type="Cardinal">1000</Property>
+          <Property name="SuppressStatusMessages" type="Boolean">False</Property>
+        </Object>
+        <Object Class="TFBActionListParametersCollection" XMLID="{D1F9636E-786F-4245-BFB8-616968FA3403}"/>
+      </Object>
+      <Object Class="TFBActionList" XMLID="{48501E19-D8A0-4C13-8102-BF284F6394E8}">
+        <Property name="IsFailure" type="Boolean">False</Property>
+        <Property name="IsMain" type="Boolean">False</Property>
+        <Property MultiValue="0" name="Name" type="string">Init</Property>
+        <Property MultiValue="0" name="UniqueID" type="string">{754A43B1-DE8D-4B47-BBA6-783561CA3878}</Property>
+        <Object Class="TFBAction" XMLID="{0D0885EC-ADB8-4687-9A95-4B6F8BBC2826}">
+          <Property MultiValue="0" name="ActionComment" type="string"></Property>
+          <Property MultiValue="0" name="ActionDescription" type="string">FinalBuilderAction</Property>
+          <Property name="ActionTextColor" type="Cardinal">0</Property>
+          <Property MultiValue="0" name="ActionTypeID" type="string"></Property>
+          <Property name="Enabled" type="Boolean">True</Property>
+          <Property name="ExpandActionLogTitle" type="Boolean">True</Property>
+          <Property name="HideActionFromLog" type="Boolean">False</Property>
+          <Property name="IgnoreFailure" type="Boolean">False</Property>
+          <Property name="Locked" type="Boolean">False</Property>
+          <Property name="LogActionProperties" type="Boolean">False</Property>
+          <Property MultiValue="0" name="LogToVariable" type="TVariableName"></Property>
+          <Property name="MaxRetryAttempts" type="Cardinal">0</Property>
+          <Property name="PauseInterval" type="Cardinal">0</Property>
+          <Property name="RetryPauseInterval" type="Cardinal">1000</Property>
+          <Property name="SuppressStatusMessages" type="Boolean">False</Property>
+          <Object Class="TFBSetBuildStatusMessage" XMLID="{EF39F3E1-4F1B-40E0-8FFE-B71EA92159C4}">
+            <Property MultiValue="0" name="ActionComment" type="string"></Property>
+            <Property MultiValue="1" name="ActionDescription" type="string">
+              <![CDATA[Set Build Status Message to &quot;Init&quot;]]>
+            </Property>
+            <Property name="ActionTextColor" type="Cardinal">0</Property>
+            <Property MultiValue="0" name="ActionTypeID" type="string"></Property>
+            <Property name="Enabled" type="Boolean">True</Property>
+            <Property name="ExpandActionLogTitle" type="Boolean">True</Property>
+            <Property name="HideActionFromLog" type="Boolean">False</Property>
+            <Property name="IgnoreFailure" type="Boolean">True</Property>
+            <Property name="IsBold" type="Boolean">True</Property>
+            <Property name="Locked" type="Boolean">False</Property>
+            <Property name="LogActionProperties" type="Boolean">False</Property>
+            <Property MultiValue="0" name="LogToVariable" type="TVariableName"></Property>
+            <Property name="MaxRetryAttempts" type="Cardinal">0</Property>
+            <Property name="PauseInterval" type="Cardinal">0</Property>
+            <Property name="RetryPauseInterval" type="Cardinal">1000</Property>
+            <Property name="SetBold" type="Boolean">True</Property>
+            <Property name="SetColour" type="Boolean">True</Property>
+            <Property MultiValue="0" name="StatusMessage" type="string">Init</Property>
+            <Property name="SuppressStatusMessages" type="Boolean">False</Property>
+            <Property name="TheColour" type="TColor">0</Property>
+          </Object>
+          <Object Class="TFBScriptBasedAction" XMLID="{89ACCCC2-1A4A-4001-A4BE-0FD0FA40A8CE}">
+            <Property MultiValue="0" name="ActionComment" type="string"></Property>
+            <Property MultiValue="1" name="ActionDescription" type="string">
+              <![CDATA[Extract Root from FBPROJECTDIR]]>
+            </Property>
+            <Property name="ActionTextColor" type="Cardinal">0</Property>
+            <Property MultiValue="0" name="ActionTypeID" type="string">{78526C82-A8E7-42B3-8C9D-1E229C79D915}</Property>
+            <Property MultiValue="1" name="CustomActionName" type="string">
+              <![CDATA[String Replace]]>
+            </Property>
+            <Property MultiValue="1" name="Description" type="string">
+              <![CDATA[Extract Root from FBPROJECTDIR]]>
+            </Property>
+            <Property name="Enabled" type="Boolean">True</Property>
+            <Property name="EnableTimeout" type="Boolean">False</Property>
+            <Property name="ExpandActionLogTitle" type="Boolean">True</Property>
+            <Property name="HideActionFromLog" type="Boolean">False</Property>
+            <Property name="IgnoreFailure" type="Boolean">False</Property>
+            <Property MultiValue="0" name="ImpersonateToken" type="string"></Property>
+            <Property name="ImpersonateUseNetCredOnly" type="Boolean">False</Property>
+            <Property name="ImpersonateUser" type="Boolean">False</Property>
+            <Property MultiValue="0" name="ImpersonateUserName" type="string"></Property>
+            <Property name="Locked" type="Boolean">False</Property>
+            <Property name="LogActionProperties" type="Boolean">False</Property>
+            <Property MultiValue="0" name="LogToVariable" type="TVariableName"></Property>
+            <Property name="MaxRetryAttempts" type="Cardinal">0</Property>
+            <Property name="PauseInterval" type="Cardinal">0</Property>
+            <Property name="RetryPauseInterval" type="Cardinal">1000</Property>
+            <Property name="SuppressStatusMessages" type="Boolean">False</Property>
+            <Property name="TerminateOnTimeout" type="Boolean">True</Property>
+            <Property name="TimeoutLength" type="Cardinal">1</Property>
+            <CustomProperty MultiValue="0" name="InputString" type="ptString">%FBPROJECTDIR%</CustomProperty>
+            <CustomProperty name="ApplyToInput" type="ptBoolean">False</CustomProperty>
+            <CustomProperty name="UsingInputVariable" type="ptBoolean">False</CustomProperty>
+            <CustomProperty MultiValue="0" name="OutputVariable" type="ptString">Root</CustomProperty>
+            <CustomProperty MultiValue="0" name="InputVariable" type="ptString">Root</CustomProperty>
+            <CustomProperty MultiValue="0" name="SearchString" type="ptString">\shared\fitting\Build</CustomProperty>
+            <CustomProperty MultiValue="0" name="ReplacementString" type="ptString"></CustomProperty>
+            <CustomProperty name="CaseSensitive" type="ptBoolean">False</CustomProperty>
+            <CustomProperty name="ReplaceAll" type="ptBoolean">False</CustomProperty>
+          </Object>
+          <Object Class="TSetVariableAction" XMLID="{905542D1-3D78-4CCC-ACAD-D3F222F4A518}">
+            <Property MultiValue="0" name="ActionComment" type="string"></Property>
+            <Property MultiValue="1" name="ActionDescription" type="string">
+              <![CDATA[Set Variable ProductRoot to [ %Root%\shared\fitting ]]]>
+            </Property>
+            <Property name="ActionTextColor" type="Cardinal">0</Property>
+            <Property MultiValue="0" name="ActionTypeID" type="string"></Property>
+            <Property name="ApplyToExisting" type="Boolean">False</Property>
+            <Property name="DoExpandExpression" type="Boolean">True</Property>
+            <Property name="Enabled" type="Boolean">True</Property>
+            <Property name="ExpandActionLogTitle" type="Boolean">True</Property>
+            <Property name="ForceType" type="TFBSetVariableForceType">ftString</Property>
+            <Property name="HideActionFromLog" type="Boolean">False</Property>
+            <Property name="IgnoreFailure" type="Boolean">False</Property>
+            <Property name="Locked" type="Boolean">False</Property>
+            <Property name="LogActionProperties" type="Boolean">False</Property>
+            <Property MultiValue="0" name="LogToVariable" type="TVariableName"></Property>
+            <Property name="MaxRetryAttempts" type="Cardinal">0</Property>
+            <Property name="Modifier" type="TFBSetVariableModifier">smNone</Property>
+            <Property MultiValue="0" name="NewValue" type="string">%Root%\shared\fitting</Property>
+            <Property name="PauseInterval" type="Cardinal">0</Property>
+            <Property name="RetryPauseInterval" type="Cardinal">1000</Property>
+            <Property name="SuppressStatusMessages" type="Boolean">False</Property>
+            <Property MultiValue="0" name="VariableName" type="TVariableName">ProductRoot</Property>
+          </Object>
+          <Object Class="TSetVariableAction" XMLID="{24E1D78A-C79D-4F61-B804-BDEEBF1FDD07}">
+            <Property MultiValue="0" name="ActionComment" type="string"></Property>
+            <Property MultiValue="1" name="ActionDescription" type="string">
+              <![CDATA[Set Variable SrcDir to [ %ProductRoot%\Src ]]]>
+            </Property>
+            <Property name="ActionTextColor" type="Cardinal">0</Property>
+            <Property MultiValue="0" name="ActionTypeID" type="string"></Property>
+            <Property name="ApplyToExisting" type="Boolean">False</Property>
+            <Property name="DoExpandExpression" type="Boolean">True</Property>
+            <Property name="Enabled" type="Boolean">True</Property>
+            <Property name="ExpandActionLogTitle" type="Boolean">True</Property>
+            <Property name="ForceType" type="TFBSetVariableForceType">ftString</Property>
+            <Property name="HideActionFromLog" type="Boolean">False</Property>
+            <Property name="IgnoreFailure" type="Boolean">False</Property>
+            <Property name="Locked" type="Boolean">False</Property>
+            <Property name="LogActionProperties" type="Boolean">False</Property>
+            <Property MultiValue="0" name="LogToVariable" type="TVariableName"></Property>
+            <Property name="MaxRetryAttempts" type="Cardinal">0</Property>
+            <Property name="Modifier" type="TFBSetVariableModifier">smNone</Property>
+            <Property MultiValue="0" name="NewValue" type="string">%ProductRoot%\Src</Property>
+            <Property name="PauseInterval" type="Cardinal">0</Property>
+            <Property name="RetryPauseInterval" type="Cardinal">1000</Property>
+            <Property name="SuppressStatusMessages" type="Boolean">False</Property>
+            <Property MultiValue="0" name="VariableName" type="TVariableName">SrcDir</Property>
+          </Object>
+          <Object Class="TFBVariablesLoadAction" XMLID="{17D2F5B6-BCD0-4A5C-8B49-C7D599FC0E5F}">
+            <Property MultiValue="1" name="ActionComment" type="string">
+              <![CDATA[Load section UserInput: InstallShield and buildjob]]>
+            </Property>
+            <Property MultiValue="1" name="ActionDescription" type="string">
+              <![CDATA[Load Variables from INI [VersionInfo.ini, Variables: BuildParams,CompanyName,ProductName,ProjectName]]]>
+            </Property>
+            <Property name="ActionTextColor" type="Cardinal">0</Property>
+            <Property MultiValue="0" name="ActionTypeID" type="string"></Property>
+            <Property name="CreateVarInINIifNotExists" type="Boolean">True</Property>
+            <Property name="Enabled" type="Boolean">True</Property>
+            <Property name="ExpandActionLogTitle" type="Boolean">True</Property>
+            <Property name="FailIfVariableNotDefined" type="Boolean">True</Property>
+            <Property name="FailIfVariableNotInIniFile" type="Boolean">False</Property>
+            <Property name="HideActionFromLog" type="Boolean">False</Property>
+            <Property name="IgnoreFailure" type="Boolean">False</Property>
+            <Property name="IgnoreFileNotFound" type="Boolean">False</Property>
+            <Property MultiValue="0" name="INIFile" type="string">%SrcDir%\VersionInfo.ini</Property>
+            <Property name="Locked" type="Boolean">False</Property>
+            <Property name="LogActionProperties" type="Boolean">False</Property>
+            <Property MultiValue="0" name="LogToVariable" type="TVariableName"></Property>
+            <Property name="MaxRetryAttempts" type="Cardinal">0</Property>
+            <Property name="PauseInterval" type="Cardinal">0</Property>
+            <Property name="RetryPauseInterval" type="Cardinal">1000</Property>
+            <Property MultiValue="0" name="SectionName" type="string">BuildInfo</Property>
+            <Property name="SuppressStatusMessages" type="Boolean">False</Property>
+            <Property name="Variables" type="TStrings">
+              <![CDATA[BuildParams
+CompanyName
+ProductName
+ProjectName
+]]>
+            </Property>
+            <Property name="VariableTypes" type="TStrings">
+              <![CDATA[String
+String
+String
+String
+]]>
+            </Property>
+          </Object>
+          <Object Class="TSetVariableAction" XMLID="{EF28752A-BBDE-422E-B4EA-54EC80B60AC4}">
+            <Property MultiValue="0" name="ActionComment" type="string"></Property>
+            <Property MultiValue="1" name="ActionDescription" type="string">
+              <![CDATA[Set Variable RunDir to [ %ProductRoot%\run\%Configuration% ]]]>
+            </Property>
+            <Property name="ActionTextColor" type="Cardinal">0</Property>
+            <Property MultiValue="0" name="ActionTypeID" type="string"></Property>
+            <Property name="ApplyToExisting" type="Boolean">False</Property>
+            <Property name="DoExpandExpression" type="Boolean">True</Property>
+            <Property name="Enabled" type="Boolean">True</Property>
+            <Property name="ExpandActionLogTitle" type="Boolean">True</Property>
+            <Property name="ForceType" type="TFBSetVariableForceType">ftString</Property>
+            <Property name="HideActionFromLog" type="Boolean">False</Property>
+            <Property name="IgnoreFailure" type="Boolean">False</Property>
+            <Property name="Locked" type="Boolean">False</Property>
+            <Property name="LogActionProperties" type="Boolean">False</Property>
+            <Property MultiValue="0" name="LogToVariable" type="TVariableName"></Property>
+            <Property name="MaxRetryAttempts" type="Cardinal">0</Property>
+            <Property name="Modifier" type="TFBSetVariableModifier">smNone</Property>
+            <Property MultiValue="0" name="NewValue" type="string">%ProductRoot%\run\%Configuration%</Property>
+            <Property name="PauseInterval" type="Cardinal">0</Property>
+            <Property name="RetryPauseInterval" type="Cardinal">1000</Property>
+            <Property name="SuppressStatusMessages" type="Boolean">False</Property>
+            <Property MultiValue="0" name="VariableName" type="TVariableName">RunDir</Property>
+          </Object>
+          <Object Class="TSetVariableAction" XMLID="{0BF0A667-7210-49A5-9334-935F8963BE58}">
+            <Property MultiValue="0" name="ActionComment" type="string"></Property>
+            <Property MultiValue="1" name="ActionDescription" type="string">
+              <![CDATA[Set Variable BuildCommon to [ %Root%\tools\Build\MSBuildTargets\BuildCommon.fbp7 ]]]>
+            </Property>
+            <Property name="ActionTextColor" type="Cardinal">0</Property>
+            <Property MultiValue="0" name="ActionTypeID" type="string"></Property>
+            <Property name="ApplyToExisting" type="Boolean">False</Property>
+            <Property name="DoExpandExpression" type="Boolean">True</Property>
+            <Property name="Enabled" type="Boolean">True</Property>
+            <Property name="ExpandActionLogTitle" type="Boolean">True</Property>
+            <Property name="ForceType" type="TFBSetVariableForceType">ftString</Property>
+            <Property name="HideActionFromLog" type="Boolean">False</Property>
+            <Property name="IgnoreFailure" type="Boolean">False</Property>
+            <Property name="Locked" type="Boolean">False</Property>
+            <Property name="LogActionProperties" type="Boolean">False</Property>
+            <Property MultiValue="0" name="LogToVariable" type="TVariableName"></Property>
+            <Property name="MaxRetryAttempts" type="Cardinal">0</Property>
+            <Property name="Modifier" type="TFBSetVariableModifier">smNone</Property>
+            <Property MultiValue="0" name="NewValue" type="string">%Root%\tools\Build\MSBuildTargets\BuildCommon.fbp7</Property>
+            <Property name="PauseInterval" type="Cardinal">0</Property>
+            <Property name="RetryPauseInterval" type="Cardinal">1000</Property>
+            <Property name="SuppressStatusMessages" type="Boolean">False</Property>
+            <Property MultiValue="0" name="VariableName" type="TVariableName">BuildCommon</Property>
+          </Object>
+        </Object>
+        <Object Class="TFBActionListParametersCollection" XMLID="{ED7AD20B-A5C6-4A38-BDE8-52106CA1236C}"/>
+      </Object>
+      <Object Class="TFBActionList" XMLID="{8CE2DF3E-F90F-4BA1-80AC-6F9B56B2F17B}">
+        <Property name="IsFailure" type="Boolean">False</Property>
+        <Property name="IsMain" type="Boolean">False</Property>
+        <Property MultiValue="0" name="Name" type="string">Prepare</Property>
+        <Property MultiValue="0" name="UniqueID" type="string">{0BA00AA6-F7FA-461D-AB38-D0043EE2397A}</Property>
+        <Object Class="TFBAction" XMLID="{8D56A152-D326-4007-B85E-74EF3A3C3DA5}">
+          <Property MultiValue="0" name="ActionComment" type="string"></Property>
+          <Property MultiValue="0" name="ActionDescription" type="string">FinalBuilderAction</Property>
+          <Property name="ActionTextColor" type="Cardinal">0</Property>
+          <Property MultiValue="0" name="ActionTypeID" type="string"></Property>
+          <Property name="Enabled" type="Boolean">True</Property>
+          <Property name="ExpandActionLogTitle" type="Boolean">True</Property>
+          <Property name="HideActionFromLog" type="Boolean">False</Property>
+          <Property name="IgnoreFailure" type="Boolean">False</Property>
+          <Property name="Locked" type="Boolean">False</Property>
+          <Property name="LogActionProperties" type="Boolean">False</Property>
+          <Property MultiValue="0" name="LogToVariable" type="TVariableName"></Property>
+          <Property name="MaxRetryAttempts" type="Cardinal">0</Property>
+          <Property name="PauseInterval" type="Cardinal">0</Property>
+          <Property name="RetryPauseInterval" type="Cardinal">1000</Property>
+          <Property name="SuppressStatusMessages" type="Boolean">False</Property>
+          <Object Class="TFBIfThenAction" XMLID="{F57FAAA2-85AD-45B3-8EB7-2A3680B512BE}">
+            <Property MultiValue="0" name="ActionComment" type="string"></Property>
+            <Property MultiValue="1" name="ActionDescription" type="string">
+              <![CDATA[If [%BuildType%]  is not in CSV  [CDBUILD,NOBUILD,REBUILD]]]>
+            </Property>
+            <Property name="ActionTextColor" type="Cardinal">0</Property>
+            <Property MultiValue="0" name="ActionTypeID" type="string"></Property>
+            <Property name="Enabled" type="Boolean">True</Property>
+            <Property name="ExpandActionLogTitle" type="Boolean">False</Property>
+            <Property name="HideActionFromLog" type="Boolean">False</Property>
+            <Property name="IgnoreFailure" type="Boolean">False</Property>
+            <Property MultiValue="1" name="LHSStorageString" type="string">
+              <![CDATA[%BuildType%
+]]>
+            </Property>
+            <Property name="Locked" type="Boolean">False</Property>
+            <Property name="LogActionProperties" type="Boolean">False</Property>
+            <Property MultiValue="0" name="LogToVariable" type="TVariableName"></Property>
+            <Property name="MaxRetryAttempts" type="Cardinal">0</Property>
+            <Property MultiValue="1" name="OperatorsStorageString" type="string">
+              <![CDATA[ is not in CSV 
+]]>
+            </Property>
+            <Property name="PauseInterval" type="Cardinal">0</Property>
+            <Property name="ResultInLogTitle" type="Boolean">True</Property>
+            <Property name="RetryPauseInterval" type="Cardinal">1000</Property>
+            <Property MultiValue="1" name="RHSStorageString" type="string">
+              <![CDATA[CDBUILD,NOBUILD,REBUILD
+]]>
+            </Property>
+            <Property name="ShortCircuitEvaluation" type="Boolean">True</Property>
+            <Property name="SuppressStatusMessages" type="Boolean">False</Property>
+            <Property name="TermJoiner" type="TFBIfTermJoiner">jwOr</Property>
+            <Object Class="TFBStopBuildAction" XMLID="{2691E45B-B91F-4F1C-AF72-6A101DF01606}">
+              <Property MultiValue="0" name="ActionComment" type="string"></Property>
+              <Property MultiValue="1" name="ActionDescription" type="string">
+                <![CDATA[Stop Run [Failure]]]>
+              </Property>
+              <Property name="ActionTextColor" type="Cardinal">0</Property>
+              <Property MultiValue="0" name="ActionTypeID" type="string"></Property>
+              <Property name="BuildResult" type="Boolean">False</Property>
+              <Property name="Enabled" type="Boolean">True</Property>
+              <Property name="ExpandActionLogTitle" type="Boolean">True</Property>
+              <Property name="HideActionFromLog" type="Boolean">False</Property>
+              <Property name="IgnoreFailure" type="Boolean">False</Property>
+              <Property name="Locked" type="Boolean">False</Property>
+              <Property name="LogActionProperties" type="Boolean">False</Property>
+              <Property MultiValue="0" name="LogToVariable" type="TVariableName"></Property>
+              <Property name="MaxRetryAttempts" type="Cardinal">0</Property>
+              <Property name="PauseInterval" type="Cardinal">0</Property>
+              <Property name="RetryPauseInterval" type="Cardinal">1000</Property>
+              <Property name="SuppressStatusMessages" type="Boolean">False</Property>
+            </Object>
+          </Object>
+          <Object Class="TGroupAction" XMLID="{B4CFAD7E-4890-48B3-8BA2-C177744315C9}">
+            <Property MultiValue="0" name="ActionComment" type="string"></Property>
+            <Property MultiValue="1" name="ActionDescription" type="string">
+              <![CDATA[Load VersionInfo and ProductVersion]]>
+            </Property>
+            <Property name="ActionTextColor" type="Cardinal">0</Property>
+            <Property MultiValue="0" name="ActionTypeID" type="string"></Property>
+            <Property MultiValue="1" name="Description" type="string">
+              <![CDATA[Load VersionInfo and ProductVersion]]>
+            </Property>
+            <Property name="Enabled" type="Boolean">True</Property>
+            <Property name="ExpandActionLogTitle" type="Boolean">True</Property>
+            <Property name="HideActionFromLog" type="Boolean">False</Property>
+            <Property name="IgnoreFailure" type="Boolean">False</Property>
+            <Property name="Locked" type="Boolean">False</Property>
+            <Property name="LogActionProperties" type="Boolean">False</Property>
+            <Property MultiValue="0" name="LogToVariable" type="TVariableName"></Property>
+            <Property name="MaxRetryAttempts" type="Cardinal">0</Property>
+            <Property name="PauseInterval" type="Cardinal">0</Property>
+            <Property name="RetryPauseInterval" type="Cardinal">1000</Property>
+            <Property name="SuppressStatusMessages" type="Boolean">False</Property>
+            <Object Class="TFBPropertySetDefineAction" XMLID="{57C9DC35-9CD7-4D1D-8469-FD297F098126}">
+              <Property MultiValue="0" name="ActionComment" type="string"></Property>
+              <Property MultiValue="1" name="ActionDescription" type="string">
+                <![CDATA[PropertySet define [ VersionInfo ]]]>
+              </Property>
+              <Property name="ActionTextColor" type="Cardinal">0</Property>
+              <Property MultiValue="0" name="ActionTypeID" type="string"></Property>
+              <Property name="Enabled" type="Boolean">True</Property>
+              <Property name="ExcludedProperties" type="TStrings">
+                <![CDATA[]]>
+              </Property>
+              <Property name="ExpandActionLogTitle" type="Boolean">True</Property>
+              <Property name="HideActionFromLog" type="Boolean">False</Property>
+              <Property name="IgnoreFailure" type="Boolean">False</Property>
+              <Property name="Locked" type="Boolean">False</Property>
+              <Property name="LogActionProperties" type="Boolean">False</Property>
+              <Property MultiValue="0" name="LogToVariable" type="TVariableName"></Property>
+              <Property name="MaxRetryAttempts" type="Cardinal">0</Property>
+              <Property name="PauseInterval" type="Cardinal">0</Property>
+              <Property MultiValue="0" name="PropertySetName" type="string">VersionInfo</Property>
+              <Property name="RetryPauseInterval" type="Cardinal">1000</Property>
+              <Property name="SuppressStatusMessages" type="Boolean">False</Property>
+              <Object Class="TFBDotNetVersionInfoPropertySetObject" XMLID="{81B2D554-A98F-4B61-9FF8-6A91CC0A1FD9}">
+                <Property name="BuildVersion" type="Integer">0</Property>
+                <Property MultiValue="0" name="Company" type="string"></Property>
+                <Property MultiValue="0" name="Copyright" type="string"></Property>
+                <Property MultiValue="0" name="Description" type="string"></Property>
+                <Property name="FileBuildVersion" type="Integer">0</Property>
+                <Property name="FileMajorVersion" type="Integer">0</Property>
+                <Property name="FileMinorVersion" type="Integer">0</Property>
+                <Property name="FileRevisionVersion" type="Integer">0</Property>
+                <Property name="LinkFileVersion" type="Boolean">True</Property>
+                <Property name="MajorVersion" type="Integer">0</Property>
+                <Property name="MinorVersion" type="Integer">0</Property>
+                <Property MultiValue="0" name="Name" type="string">VersionInfo</Property>
+                <Property MultiValue="0" name="Product" type="string"></Property>
+                <Property name="RevisionVersion" type="Integer">0</Property>
+                <Property MultiValue="0" name="Title" type="string"></Property>
+                <Property MultiValue="0" name="Trademark" type="string"></Property>
+              </Object>
+            </Object>
+            <Object Class="TFBPropertySetLoadFromINIAction" XMLID="{5C532CCB-AB7B-4490-B23F-22890904B6A8}">
+              <Property MultiValue="0" name="ActionComment" type="string"></Property>
+              <Property MultiValue="1" name="ActionDescription" type="string">
+                <![CDATA[PropertySet  [ VersionInfo ] Load From [ %SrcDir%\VersionInfo.ini ]]]>
+              </Property>
+              <Property name="ActionTextColor" type="Cardinal">0</Property>
+              <Property MultiValue="0" name="ActionTypeID" type="string"></Property>
+              <Property name="Enabled" type="Boolean">True</Property>
+              <Property name="ExpandActionLogTitle" type="Boolean">True</Property>
+              <Property name="FailIfFileMissing" type="Boolean">False</Property>
+              <Property name="HideActionFromLog" type="Boolean">False</Property>
+              <Property name="IgnoreFailure" type="Boolean">True</Property>
+              <Property MultiValue="0" name="INIFilename" type="string">%SrcDir%\VersionInfo.ini</Property>
+              <Property name="Locked" type="Boolean">False</Property>
+              <Property name="LogActionProperties" type="Boolean">False</Property>
+              <Property MultiValue="0" name="LogToVariable" type="TVariableName"></Property>
+              <Property name="MaxRetryAttempts" type="Cardinal">0</Property>
+              <Property name="PauseInterval" type="Cardinal">0</Property>
+              <Property MultiValue="0" name="PropertySetName" type="string">VersionInfo</Property>
+              <Property name="RetryPauseInterval" type="Cardinal">1000</Property>
+              <Property MultiValue="0" name="Section" type="string">VersionInfo</Property>
+              <Property name="SetValuesTo" type="TStrings">
+                <![CDATA[
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+]]>
+              </Property>
+              <Property name="SuppressStatusMessages" type="Boolean">False</Property>
+              <Property name="ValuesToSet" type="TStrings">
+                <![CDATA[BuildVersion=0
+Company=0
+Copyright=0
+Description=0
+FileBuildVersion=0
+FileMajorVersion=0
+FileMinorVersion=0
+FileRevisionVersion=0
+LinkFileVersion=0
+MajorVersion=0
+MinorVersion=0
+Product=0
+RevisionVersion=0
+Title=0
+Trademark=0
+]]>
+              </Property>
+            </Object>
+            <Object Class="TFBPropertySetToVariableAction" XMLID="{4D02AD75-B1AE-4D38-917C-462318250066}">
+              <Property MultiValue="0" name="ActionComment" type="string"></Property>
+              <Property MultiValue="1" name="ActionDescription" type="string">
+                <![CDATA[PropertySet  [ VersionInfo ] To Variable [ ProductVersion ]]]>
+              </Property>
+              <Property name="ActionTextColor" type="Cardinal">0</Property>
+              <Property MultiValue="0" name="ActionTypeID" type="string"></Property>
+              <Property name="ChosenProperties" type="TStrings">
+                <![CDATA[MajorVersion
+MinorVersion
+BuildVersion
+RevisionVersion
+]]>
+              </Property>
+              <Property name="Enabled" type="Boolean">True</Property>
+              <Property name="ExpandActionLogTitle" type="Boolean">True</Property>
+              <Property MultiValue="0" name="FBVariable" type="TVariableName">ProductVersion</Property>
+              <Property name="HideActionFromLog" type="Boolean">False</Property>
+              <Property name="IgnoreFailure" type="Boolean">False</Property>
+              <Property name="Locked" type="Boolean">False</Property>
+              <Property name="LogActionProperties" type="Boolean">False</Property>
+              <Property MultiValue="0" name="LogToVariable" type="TVariableName"></Property>
+              <Property name="MaxRetryAttempts" type="Cardinal">0</Property>
+              <Property MultiValue="0" name="PadCharacter" type="string"></Property>
+              <Property MultiValue="0" name="PadLength" type="string"></Property>
+              <Property name="PauseInterval" type="Cardinal">0</Property>
+              <Property MultiValue="0" name="Prefix" type="string"></Property>
+              <Property MultiValue="0" name="PropertySetName" type="string">VersionInfo</Property>
+              <Property name="RetryPauseInterval" type="Cardinal">1000</Property>
+              <Property MultiValue="0" name="Separator" type="string">.</Property>
+              <Property MultiValue="0" name="Suffix" type="string"></Property>
+              <Property name="SuppressStatusMessages" type="Boolean">False</Property>
+            </Object>
+          </Object>
+          <Object Class="TDateTimeAction" XMLID="{E435A3D2-17BF-42E2-9052-96D57436F990}">
+            <Property MultiValue="0" name="ActionComment" type="string"></Property>
+            <Property MultiValue="1" name="ActionDescription" type="string">
+              <![CDATA[Put current date/time into variable BuildLocalId, format: yyyymmdd-hhmmss]]>
+            </Property>
+            <Property name="ActionTextColor" type="Cardinal">0</Property>
+            <Property MultiValue="0" name="ActionTypeID" type="string"></Property>
+            <Property MultiValue="0" name="DateFormat" type="string">yyyymmdd-hhmmss</Property>
+            <Property name="Enabled" type="Boolean">True</Property>
+            <Property name="ExpandActionLogTitle" type="Boolean">True</Property>
+            <Property MultiValue="0" name="FBVariable" type="TVariableName">BuildLocalId</Property>
+            <Property name="ForceSeparators" type="Boolean">False</Property>
+            <Property name="HideActionFromLog" type="Boolean">False</Property>
+            <Property name="IgnoreFailure" type="Boolean">False</Property>
+            <Property name="Locked" type="Boolean">False</Property>
+            <Property name="LogActionProperties" type="Boolean">False</Property>
+            <Property MultiValue="0" name="LogToVariable" type="TVariableName"></Property>
+            <Property name="ManipulationType" type="TManipulationType">Add</Property>
+            <Property name="ManipulationUnit" type="TManipulationUnit">Seconds</Property>
+            <Property MultiValue="0" name="ManipulationValue" type="string"></Property>
+            <Property name="MaxRetryAttempts" type="Cardinal">0</Property>
+            <Property name="PauseInterval" type="Cardinal">0</Property>
+            <Property name="RetryPauseInterval" type="Cardinal">1000</Property>
+            <Property name="SuppressStatusMessages" type="Boolean">False</Property>
+            <Property name="TheDate" type="TDateTime">40989.6059906597</Property>
+            <Property name="UseNow" type="Boolean">True</Property>
+          </Object>
+          <Object Class="TGroupAction" XMLID="{FBE099F8-8CD0-493A-A431-DCD92D1D4D29}">
+            <Property MultiValue="0" name="ActionComment" type="string"></Property>
+            <Property MultiValue="1" name="ActionDescription" type="string">
+              <![CDATA[Set ReleasePath&#39;s]]>
+            </Property>
+            <Property name="ActionTextColor" type="Cardinal">0</Property>
+            <Property MultiValue="0" name="ActionTypeID" type="string"></Property>
+            <Property MultiValue="1" name="Description" type="string">
+              <![CDATA[Set ReleasePath&#39;s]]>
+            </Property>
+            <Property name="Enabled" type="Boolean">True</Property>
+            <Property name="ExpandActionLogTitle" type="Boolean">True</Property>
+            <Property name="HideActionFromLog" type="Boolean">False</Property>
+            <Property name="IgnoreFailure" type="Boolean">False</Property>
+            <Property name="Locked" type="Boolean">False</Property>
+            <Property name="LogActionProperties" type="Boolean">False</Property>
+            <Property MultiValue="0" name="LogToVariable" type="TVariableName"></Property>
+            <Property name="MaxRetryAttempts" type="Cardinal">0</Property>
+            <Property name="PauseInterval" type="Cardinal">0</Property>
+            <Property name="RetryPauseInterval" type="Cardinal">1000</Property>
+            <Property name="SuppressStatusMessages" type="Boolean">False</Property>
+            <Object Class="TFBVariable" XMLID="{8F04D586-8248-4139-9F0A-641C79676E1F}">
+              <Property name="BasicType" type="TBasicType">btVariant</Property>
+              <Property MultiValue="1" name="Comment" type="string">
+                <![CDATA[Dato Tid streng. Bruges til at unique at marker nobuilds]]>
+              </Property>
+              <Property MultiValue="0" name="DefaultValue" type="string"></Property>
+              <Property MultiValue="0" name="FormatString" type="string"></Property>
+              <Property MultiValue="0" name="GroupName" type="string"></Property>
+              <Property name="IsMacro" type="Boolean">False</Property>
+              <Property name="IsPersistent" type="Boolean">False</Property>
+              <Property name="MakeEnv" type="Boolean">False</Property>
+              <Property MultiValue="0" name="Name" type="string">DateTime</Property>
+              <Property name="VariableScope" type="TFBVariableScope">vtProject</Property>
+            </Object>
+            <Object Class="TSetVariableAction" XMLID="{BC9F406B-BA67-4969-BC64-634BCE886828}">
+              <Property MultiValue="0" name="ActionComment" type="string"></Property>
+              <Property MultiValue="1" name="ActionDescription" type="string">
+                <![CDATA[Set Variable ReleaseProjectRoot to [ %ReleaseRoot%\Builds\%CompanyName%\%ProductName%\%ProjectName% ]]]>
+              </Property>
+              <Property MultiValue="1" name="ActionLogTitle" type="string">
+                <![CDATA[Set Variable ReleasePath to [ %ReleaseRoot%\Builds\%COMPANY_NAME%\%ProductName%\%ProjectName%\%ProductName% ]]]>
+              </Property>
+              <Property name="ActionTextColor" type="Cardinal">0</Property>
+              <Property MultiValue="0" name="ActionTypeID" type="string"></Property>
+              <Property name="ApplyToExisting" type="Boolean">False</Property>
+              <Property name="DoExpandExpression" type="Boolean">True</Property>
+              <Property name="Enabled" type="Boolean">True</Property>
+              <Property name="ExpandActionLogTitle" type="Boolean">True</Property>
+              <Property name="ForceType" type="TFBSetVariableForceType">ftString</Property>
+              <Property name="HideActionFromLog" type="Boolean">False</Property>
+              <Property name="IgnoreFailure" type="Boolean">False</Property>
+              <Property name="Locked" type="Boolean">False</Property>
+              <Property name="LogActionProperties" type="Boolean">False</Property>
+              <Property MultiValue="0" name="LogToVariable" type="TVariableName"></Property>
+              <Property name="MaxRetryAttempts" type="Cardinal">0</Property>
+              <Property name="Modifier" type="TFBSetVariableModifier">smNone</Property>
+              <Property MultiValue="0" name="NewValue" type="string">%ReleaseRoot%\Builds\%CompanyName%\%ProductName%\%ProjectName%</Property>
+              <Property name="PauseInterval" type="Cardinal">0</Property>
+              <Property name="RetryPauseInterval" type="Cardinal">1000</Property>
+              <Property name="SuppressStatusMessages" type="Boolean">False</Property>
+              <Property MultiValue="0" name="VariableName" type="TVariableName">ReleaseProjectRoot</Property>
+            </Object>
+            <Object Class="TSetVariableAction" XMLID="{70E3CDCA-3DB0-4E68-9E7C-A122525A5F6A}">
+              <Property MultiValue="0" name="ActionComment" type="string"></Property>
+              <Property MultiValue="1" name="ActionDescription" type="string">
+                <![CDATA[Set Variable ReleasePath to [ %ReleaseProjectRoot%\%BuildLevel% ]]]>
+              </Property>
+              <Property MultiValue="1" name="ActionLogTitle" type="string">
+                <![CDATA[Set Variable ReleasePath to [ %ReleaseRoot%\Builds\%COMPANY_NAME%\%ProductName%\%ProjectName%\%ProductName% ]]]>
+              </Property>
+              <Property name="ActionTextColor" type="Cardinal">0</Property>
+              <Property MultiValue="0" name="ActionTypeID" type="string"></Property>
+              <Property name="ApplyToExisting" type="Boolean">False</Property>
+              <Property name="DoExpandExpression" type="Boolean">True</Property>
+              <Property name="Enabled" type="Boolean">True</Property>
+              <Property name="ExpandActionLogTitle" type="Boolean">True</Property>
+              <Property name="ForceType" type="TFBSetVariableForceType">ftString</Property>
+              <Property name="HideActionFromLog" type="Boolean">False</Property>
+              <Property name="IgnoreFailure" type="Boolean">False</Property>
+              <Property name="Locked" type="Boolean">False</Property>
+              <Property name="LogActionProperties" type="Boolean">False</Property>
+              <Property MultiValue="0" name="LogToVariable" type="TVariableName"></Property>
+              <Property name="MaxRetryAttempts" type="Cardinal">0</Property>
+              <Property name="Modifier" type="TFBSetVariableModifier">smNone</Property>
+              <Property MultiValue="0" name="NewValue" type="string">%ReleaseProjectRoot%\%BuildLevel%</Property>
+              <Property name="PauseInterval" type="Cardinal">0</Property>
+              <Property name="RetryPauseInterval" type="Cardinal">1000</Property>
+              <Property name="SuppressStatusMessages" type="Boolean">False</Property>
+              <Property MultiValue="0" name="VariableName" type="TVariableName">ReleasePath</Property>
+            </Object>
+            <Object Class="TFBIfThenAction" XMLID="{8553A64C-4B79-4864-B753-B3B911BE1D7F}">
+              <Property MultiValue="0" name="ActionComment" type="string"></Property>
+              <Property MultiValue="1" name="ActionDescription" type="string">
+                <![CDATA[If [%BuildType%] = [CDBUILD]  or  [%BuildType%] = [REBUILD]]]>
+              </Property>
+              <Property name="ActionTextColor" type="Cardinal">0</Property>
+              <Property MultiValue="0" name="ActionTypeID" type="string"></Property>
+              <Property name="Enabled" type="Boolean">True</Property>
+              <Property name="ExpandActionLogTitle" type="Boolean">False</Property>
+              <Property name="HideActionFromLog" type="Boolean">False</Property>
+              <Property name="IgnoreFailure" type="Boolean">False</Property>
+              <Property MultiValue="1" name="LHSStorageString" type="string">
+                <![CDATA[%BuildType%
+%BuildType%
+]]>
+              </Property>
+              <Property name="Locked" type="Boolean">False</Property>
+              <Property name="LogActionProperties" type="Boolean">False</Property>
+              <Property MultiValue="0" name="LogToVariable" type="TVariableName"></Property>
+              <Property name="MaxRetryAttempts" type="Cardinal">0</Property>
+              <Property MultiValue="1" name="OperatorsStorageString" type="string">
+                <![CDATA[=
+=
+]]>
+              </Property>
+              <Property name="PauseInterval" type="Cardinal">0</Property>
+              <Property name="ResultInLogTitle" type="Boolean">True</Property>
+              <Property name="RetryPauseInterval" type="Cardinal">1000</Property>
+              <Property MultiValue="1" name="RHSStorageString" type="string">
+                <![CDATA[CDBUILD
+REBUILD
+]]>
+              </Property>
+              <Property name="ShortCircuitEvaluation" type="Boolean">True</Property>
+              <Property name="SuppressStatusMessages" type="Boolean">False</Property>
+              <Property name="TermJoiner" type="TFBIfTermJoiner">jwOr</Property>
+              <Object Class="TSetVariableAction" XMLID="{AFFE0086-5C17-4AFB-82B2-833D8FF7BC16}">
+                <Property MultiValue="0" name="ActionComment" type="string"></Property>
+                <Property MultiValue="1" name="ActionDescription" type="string">
+                  <![CDATA[Set Variable ReleasePath to [ %ReleasePath%\%ProductName% %ProductVersion% ]]]>
+                </Property>
+                <Property name="ActionTextColor" type="Cardinal">0</Property>
+                <Property MultiValue="0" name="ActionTypeID" type="string"></Property>
+                <Property name="ApplyToExisting" type="Boolean">False</Property>
+                <Property name="DoExpandExpression" type="Boolean">True</Property>
+                <Property name="Enabled" type="Boolean">True</Property>
+                <Property name="ExpandActionLogTitle" type="Boolean">True</Property>
+                <Property name="ForceType" type="TFBSetVariableForceType">ftDefault</Property>
+                <Property name="HideActionFromLog" type="Boolean">False</Property>
+                <Property name="IgnoreFailure" type="Boolean">False</Property>
+                <Property name="Locked" type="Boolean">False</Property>
+                <Property name="LogActionProperties" type="Boolean">False</Property>
+                <Property MultiValue="0" name="LogToVariable" type="TVariableName"></Property>
+                <Property name="MaxRetryAttempts" type="Cardinal">0</Property>
+                <Property name="Modifier" type="TFBSetVariableModifier">smNone</Property>
+                <Property MultiValue="1" name="NewValue" type="string">
+                  <![CDATA[%ReleasePath%\%ProductName% %ProductVersion%]]>
+                </Property>
+                <Property name="PauseInterval" type="Cardinal">0</Property>
+                <Property name="RetryPauseInterval" type="Cardinal">1000</Property>
+                <Property name="SuppressStatusMessages" type="Boolean">False</Property>
+                <Property MultiValue="0" name="VariableName" type="TVariableName">ReleasePath</Property>
+              </Object>
+              <Object Class="TFBIfThenAction" XMLID="{BF9D1CCB-54F9-41BD-BD27-8CC8C9D2853A}">
+                <Property MultiValue="0" name="ActionComment" type="string"></Property>
+                <Property MultiValue="1" name="ActionDescription" type="string">
+                  <![CDATA[If [%BuildType%] = [REBUILD]]]>
+                </Property>
+                <Property name="ActionTextColor" type="Cardinal">0</Property>
+                <Property MultiValue="0" name="ActionTypeID" type="string"></Property>
+                <Property name="Enabled" type="Boolean">True</Property>
+                <Property name="ExpandActionLogTitle" type="Boolean">False</Property>
+                <Property name="HideActionFromLog" type="Boolean">False</Property>
+                <Property name="IgnoreFailure" type="Boolean">False</Property>
+                <Property MultiValue="1" name="LHSStorageString" type="string">
+                  <![CDATA[%BuildType%
+]]>
+                </Property>
+                <Property name="Locked" type="Boolean">False</Property>
+                <Property name="LogActionProperties" type="Boolean">False</Property>
+                <Property MultiValue="0" name="LogToVariable" type="TVariableName"></Property>
+                <Property name="MaxRetryAttempts" type="Cardinal">0</Property>
+                <Property MultiValue="1" name="OperatorsStorageString" type="string">
+                  <![CDATA[=
+]]>
+                </Property>
+                <Property name="PauseInterval" type="Cardinal">0</Property>
+                <Property name="ResultInLogTitle" type="Boolean">True</Property>
+                <Property name="RetryPauseInterval" type="Cardinal">1000</Property>
+                <Property MultiValue="1" name="RHSStorageString" type="string">
+                  <![CDATA[REBUILD
+]]>
+                </Property>
+                <Property name="ShortCircuitEvaluation" type="Boolean">True</Property>
+                <Property name="SuppressStatusMessages" type="Boolean">False</Property>
+                <Property name="TermJoiner" type="TFBIfTermJoiner">jwOr</Property>
+                <Object Class="TSetVariableAction" XMLID="{E590E639-24CB-4051-A720-A6A9BB2EAFAA}">
+                  <Property MultiValue="0" name="ActionComment" type="string"></Property>
+                  <Property MultiValue="1" name="ActionDescription" type="string">
+                    <![CDATA[Set Variable ReleasePath to [ %ReleasePath% %BuildType% ]]]>
+                  </Property>
+                  <Property name="ActionTextColor" type="Cardinal">0</Property>
+                  <Property MultiValue="0" name="ActionTypeID" type="string"></Property>
+                  <Property name="ApplyToExisting" type="Boolean">False</Property>
+                  <Property name="DoExpandExpression" type="Boolean">True</Property>
+                  <Property name="Enabled" type="Boolean">True</Property>
+                  <Property name="ExpandActionLogTitle" type="Boolean">True</Property>
+                  <Property name="ForceType" type="TFBSetVariableForceType">ftDefault</Property>
+                  <Property name="HideActionFromLog" type="Boolean">False</Property>
+                  <Property name="IgnoreFailure" type="Boolean">False</Property>
+                  <Property name="Locked" type="Boolean">False</Property>
+                  <Property name="LogActionProperties" type="Boolean">False</Property>
+                  <Property MultiValue="0" name="LogToVariable" type="TVariableName"></Property>
+                  <Property name="MaxRetryAttempts" type="Cardinal">0</Property>
+                  <Property name="Modifier" type="TFBSetVariableModifier">smNone</Property>
+                  <Property MultiValue="1" name="NewValue" type="string">
+                    <![CDATA[%ReleasePath% %BuildType%]]>
+                  </Property>
+                  <Property name="PauseInterval" type="Cardinal">0</Property>
+                  <Property name="RetryPauseInterval" type="Cardinal">1000</Property>
+                  <Property name="SuppressStatusMessages" type="Boolean">False</Property>
+                  <Property MultiValue="0" name="VariableName" type="TVariableName">ReleasePath</Property>
+                </Object>
+              </Object>
+            </Object>
+            <Object Class="TFBElseAction" XMLID="{6ABE3B13-0E50-401D-9DC9-80D4B3998DF9}">
+              <Property MultiValue="0" name="ActionComment" type="string"></Property>
+              <Property MultiValue="0" name="ActionDescription" type="string">Else</Property>
+              <Property name="ActionTextColor" type="Cardinal">0</Property>
+              <Property MultiValue="0" name="ActionTypeID" type="string"></Property>
+              <Property name="Enabled" type="Boolean">True</Property>
+              <Property name="ExpandActionLogTitle" type="Boolean">True</Property>
+              <Property name="HideActionFromLog" type="Boolean">False</Property>
+              <Property name="IgnoreFailure" type="Boolean">False</Property>
+              <Property name="Locked" type="Boolean">False</Property>
+              <Property name="LogActionProperties" type="Boolean">False</Property>
+              <Property MultiValue="0" name="LogToVariable" type="TVariableName"></Property>
+              <Property name="MaxRetryAttempts" type="Cardinal">0</Property>
+              <Property name="PauseInterval" type="Cardinal">0</Property>
+              <Property name="RetryPauseInterval" type="Cardinal">1000</Property>
+              <Property name="SuppressStatusMessages" type="Boolean">False</Property>
+              <Object Class="TSetVariableAction" XMLID="{35C40070-DC81-4D4E-8D44-CE0BBC39BE6B}">
+                <Property MultiValue="0" name="ActionComment" type="string"></Property>
+                <Property MultiValue="1" name="ActionDescription" type="string">
+                  <![CDATA[Set Variable ReleasePath to [ %ReleasePath%\Nobuilds\%ProductVersion%\%BuildLocalId% ]]]>
+                </Property>
+                <Property name="ActionTextColor" type="Cardinal">0</Property>
+                <Property MultiValue="0" name="ActionTypeID" type="string"></Property>
+                <Property name="ApplyToExisting" type="Boolean">False</Property>
+                <Property name="DoExpandExpression" type="Boolean">True</Property>
+                <Property name="Enabled" type="Boolean">True</Property>
+                <Property name="ExpandActionLogTitle" type="Boolean">True</Property>
+                <Property name="ForceType" type="TFBSetVariableForceType">ftDefault</Property>
+                <Property name="HideActionFromLog" type="Boolean">False</Property>
+                <Property name="IgnoreFailure" type="Boolean">False</Property>
+                <Property name="Locked" type="Boolean">False</Property>
+                <Property name="LogActionProperties" type="Boolean">False</Property>
+                <Property MultiValue="0" name="LogToVariable" type="TVariableName"></Property>
+                <Property name="MaxRetryAttempts" type="Cardinal">0</Property>
+                <Property name="Modifier" type="TFBSetVariableModifier">smNone</Property>
+                <Property MultiValue="0" name="NewValue" type="string">%ReleasePath%\Nobuilds\%ProductVersion%\%BuildLocalId%</Property>
+                <Property name="PauseInterval" type="Cardinal">0</Property>
+                <Property name="RetryPauseInterval" type="Cardinal">1000</Property>
+                <Property name="SuppressStatusMessages" type="Boolean">False</Property>
+                <Property MultiValue="0" name="VariableName" type="TVariableName">ReleasePath</Property>
+              </Object>
+            </Object>
+          </Object>
+        </Object>
+        <Object Class="TFBActionListParametersCollection" XMLID="{A3619973-BDD2-4B5F-A91E-8FE43BFDFB6A}"/>
+      </Object>
+      <Object Class="TFBActionList" XMLID="{43343FCB-6785-4142-8A0A-CD2CEFEB1C77}">
+        <Property name="IsFailure" type="Boolean">False</Property>
+        <Property name="IsMain" type="Boolean">False</Property>
+        <Property MultiValue="0" name="Name" type="string">Compile</Property>
+        <Property MultiValue="0" name="UniqueID" type="string">{0B33322A-E4BE-4805-8566-C843F08F002B}</Property>
+        <Object Class="TFBAction" XMLID="{479F9E0C-4001-4CE8-BA61-BD509D496516}">
+          <Property MultiValue="0" name="ActionComment" type="string"></Property>
+          <Property MultiValue="0" name="ActionDescription" type="string">FinalBuilderAction</Property>
+          <Property name="ActionTextColor" type="Cardinal">0</Property>
+          <Property MultiValue="0" name="ActionTypeID" type="string"></Property>
+          <Property name="Enabled" type="Boolean">True</Property>
+          <Property name="ExpandActionLogTitle" type="Boolean">True</Property>
+          <Property name="HideActionFromLog" type="Boolean">False</Property>
+          <Property name="IgnoreFailure" type="Boolean">False</Property>
+          <Property name="Locked" type="Boolean">False</Property>
+          <Property name="LogActionProperties" type="Boolean">False</Property>
+          <Property MultiValue="0" name="LogToVariable" type="TVariableName"></Property>
+          <Property name="MaxRetryAttempts" type="Cardinal">0</Property>
+          <Property name="PauseInterval" type="Cardinal">0</Property>
+          <Property name="RetryPauseInterval" type="Cardinal">1000</Property>
+          <Property name="SuppressStatusMessages" type="Boolean">False</Property>
+          <Object Class="TGroupAction" XMLID="{D6D39CF0-1FE8-4221-9498-DB8D86051B92}">
+            <Property MultiValue="0" name="ActionComment" type="string"></Property>
+            <Property MultiValue="1" name="ActionDescription" type="string">
+              <![CDATA[Compile all Solutions]]>
+            </Property>
+            <Property name="ActionTextColor" type="Cardinal">0</Property>
+            <Property MultiValue="0" name="ActionTypeID" type="string"></Property>
+            <Property MultiValue="1" name="Description" type="string">
+              <![CDATA[Compile all Solutions]]>
+            </Property>
+            <Property name="Enabled" type="Boolean">True</Property>
+            <Property name="ExpandActionLogTitle" type="Boolean">True</Property>
+            <Property name="HideActionFromLog" type="Boolean">False</Property>
+            <Property name="IgnoreFailure" type="Boolean">False</Property>
+            <Property name="Locked" type="Boolean">False</Property>
+            <Property name="LogActionProperties" type="Boolean">False</Property>
+            <Property MultiValue="0" name="LogToVariable" type="TVariableName"></Property>
+            <Property name="MaxRetryAttempts" type="Cardinal">0</Property>
+            <Property name="PauseInterval" type="Cardinal">0</Property>
+            <Property name="RetryPauseInterval" type="Cardinal">1000</Property>
+            <Property name="SuppressStatusMessages" type="Boolean">False</Property>
+            <Object Class="TFBSetBuildStatusMessage" XMLID="{7EE1AF0A-0951-49F6-8DCF-BD95FA521BC1}">
+              <Property MultiValue="0" name="ActionComment" type="string"></Property>
+              <Property MultiValue="1" name="ActionDescription" type="string">
+                <![CDATA[Set Build Status Message to &quot;Build Fitting.sln&quot;]]>
+              </Property>
+              <Property name="ActionTextColor" type="Cardinal">0</Property>
+              <Property MultiValue="0" name="ActionTypeID" type="string"></Property>
+              <Property name="Enabled" type="Boolean">True</Property>
+              <Property name="ExpandActionLogTitle" type="Boolean">True</Property>
+              <Property name="HideActionFromLog" type="Boolean">False</Property>
+              <Property name="IgnoreFailure" type="Boolean">False</Property>
+              <Property name="IsBold" type="Boolean">False</Property>
+              <Property name="Locked" type="Boolean">False</Property>
+              <Property name="LogActionProperties" type="Boolean">False</Property>
+              <Property MultiValue="0" name="LogToVariable" type="TVariableName"></Property>
+              <Property name="MaxRetryAttempts" type="Cardinal">0</Property>
+              <Property name="PauseInterval" type="Cardinal">0</Property>
+              <Property name="RetryPauseInterval" type="Cardinal">1000</Property>
+              <Property name="SetBold" type="Boolean">False</Property>
+              <Property name="SetColour" type="Boolean">False</Property>
+              <Property MultiValue="1" name="StatusMessage" type="string">
+                <![CDATA[Build Fitting.sln]]>
+              </Property>
+              <Property name="SuppressStatusMessages" type="Boolean">False</Property>
+              <Property name="TheColour" type="TColor">0</Property>
+            </Object>
+            <Object Class="TFBVSDotNetAction" XMLID="{34F59919-C677-4F77-B9FD-579DAEA3A84E}">
+              <Property MultiValue="0" name="ActionComment" type="string"></Property>
+              <Property MultiValue="1" name="ActionDescription" type="string">
+                <![CDATA[Build Fitting.sln]]>
+              </Property>
+              <Property name="ActionTextColor" type="Cardinal">0</Property>
+              <Property MultiValue="0" name="ActionTypeID" type="string"></Property>
+              <Property name="AllowUnsafe" type="Boolean">False</Property>
+              <Property name="AllProjects" type="TStrings">
+                <![CDATA[]]>
+              </Property>
+              <Property name="AllWarningsAsErrors" type="Boolean">False</Property>
+              <Property name="ApplyAssemblyInfoTo" type="TVSDotNetBuildType">btAllProjects</Property>
+              <Property name="ApplyResourceInfoTo" type="TVSDotNetBuildType">btAllProjects</Property>
+              <Property MultiValue="0" name="AssemblyComment" type="string"></Property>
+              <Property MultiValue="0" name="AssemblyCompany" type="string"></Property>
+              <Property MultiValue="0" name="AssemblyCopyright" type="string"></Property>
+              <Property MultiValue="0" name="AssemblyDescription" type="string"></Property>
+              <Property MultiValue="0" name="AssemblyFileVersion" type="string">|||</Property>
+              <Property MultiValue="0" name="AssemblyProductName" type="string"></Property>
+              <Property name="AssemblySelectedProjects" type="TStrings">
+                <![CDATA[]]>
+              </Property>
+              <Property MultiValue="0" name="AssemblyTitle" type="string"></Property>
+              <Property MultiValue="0" name="AssemblyTradeMark" type="string"></Property>
+              <Property MultiValue="0" name="AssemblyVersion" type="string">|||</Property>
+              <Property name="AutoIncAssemblyBuildNumber" type="Boolean">False</Property>
+              <Property name="AutoIncAssemblyFileBuildNumber" type="Boolean">False</Property>
+              <Property name="AutoIncAssemblyFileRevisionNo" type="Boolean">False</Property>
+              <Property name="AutoIncAssemblyRevisionNo" type="Boolean">False</Property>
+              <Property name="AutoIncBuild" type="Boolean">False</Property>
+              <Property name="AutoSelectDotNetVersion" type="Boolean">True</Property>
+              <Property name="AutoUpdateFileVersion" type="Boolean">True</Property>
+              <Property name="AutoUpdateProductVersion" type="Boolean">True</Property>
+              <Property name="BuildAction" type="TVSDotNetBuildAction">baBuild</Property>
+              <Property name="BuildType" type="TVSDotNetBuildType">btAllProjects</Property>
+              <Property name="BuildVersion" type="Integer">0</Property>
+              <Property name="CodePage" type="Integer">1252</Property>
+              <Property MultiValue="0" name="CompilerConstants" type="string"></Property>
+              <Property name="DebugConstant" type="Boolean">False</Property>
+              <Property MultiValue="1" name="Description" type="string">
+                <![CDATA[Build Fitting.sln]]>
+              </Property>
+              <Property name="DisableNodeReuse" type="Boolean">True</Property>
+              <Property name="DisableSelectedWarnings" type="Boolean">False</Property>
+              <Property MultiValue="0" name="DisableWarnings" type="string"></Property>
+              <Property MultiValue="0" name="DotNetVersionInfoPropertySetName" type="string"></Property>
+              <Property name="Enabled" type="Boolean">True</Property>
+              <Property name="EnableTimeout" type="Boolean">False</Property>
+              <Property name="ExpandActionLogTitle" type="Boolean">True</Property>
+              <Property name="ExpandImpersonationToken" type="Boolean">False</Property>
+              <Property MultiValue="0" name="ExtraCmdLineParams" type="string"></Property>
+              <Property name="ExtraMSBuildProperties" type="TStrings">
+                <![CDATA[]]>
+              </Property>
+              <Property name="FailIfNoConfigurationsMatch" type="Boolean">True</Property>
+              <Property name="HideActionFromLog" type="Boolean">False</Property>
+              <Property name="IgnoreFailure" type="Boolean">False</Property>
+              <Property MultiValue="0" name="ImpersonateToken" type="string"></Property>
+              <Property name="ImpersonateUseNetCredOnly" type="Boolean">False</Property>
+              <Property name="ImpersonateUser" type="Boolean">False</Property>
+              <Property MultiValue="0" name="ImpersonateUserName" type="string"></Property>
+              <Property name="IncludeCompileDate" type="Boolean">False</Property>
+              <Property name="IsDebug" type="Boolean">False</Property>
+              <Property name="IsDLL" type="Boolean">False</Property>
+              <Property name="IsPreRelease" type="Boolean">False</Property>
+              <Property name="IsPrivate" type="Boolean">False</Property>
+              <Property name="IsSpecial" type="Boolean">False</Property>
+              <Property name="LinkAssemblyFileVersionInfo" type="Boolean">False</Property>
+              <Property name="LinkFileAndProductVersion" type="Boolean">False</Property>
+              <Property name="Locale" type="Integer">3081</Property>
+              <Property name="Locked" type="Boolean">False</Property>
+              <Property name="LogActionProperties" type="Boolean">False</Property>
+              <Property name="LogLevel" type="TMSLogLevel">llNormal</Property>
+              <Property MultiValue="0" name="LogToVariable" type="TVariableName"></Property>
+              <Property name="MajorVersion" type="Integer">0</Property>
+              <Property name="MaxCPUs" type="Integer">1</Property>
+              <Property name="MaxRetryAttempts" type="Cardinal">0</Property>
+              <Property name="MinorVersion" type="Integer">0</Property>
+              <Property name="Optimize" type="Boolean">False</Property>
+              <Property MultiValue="0" name="OutputDirectory" type="string"></Property>
+              <Property name="OverrideCompiler" type="Boolean">False</Property>
+              <Property name="OverrideReferencePaths" type="Boolean">False</Property>
+              <Property name="OverrideTargetFramework" type="Boolean">True</Property>
+              <Property name="OverrideWarnings" type="Boolean">False</Property>
+              <Property name="PauseInterval" type="Cardinal">0</Property>
+              <Property name="ProcessorAffinity" type="Cardinal">0</Property>
+              <Property name="ProcessPriority" type="TFBExecuteThreadPriority">tpNormal</Property>
+              <Property name="ProjLocationDetectMethod" type="TProjLocDetectMethod">useWMI</Property>
+              <Property name="ReferencePaths" type="TStrings">
+                <![CDATA[]]>
+              </Property>
+              <Property name="ReleaseVersion" type="Integer">0</Property>
+              <Property name="ResourceSelectedProjects" type="TStrings">
+                <![CDATA[]]>
+              </Property>
+              <Property name="RetryPauseInterval" type="Cardinal">1000</Property>
+              <Property name="SelectedProjects" type="TStrings">
+                <![CDATA[]]>
+              </Property>
+              <Property name="SelectedWarningsAsErrors" type="Boolean">False</Property>
+              <Property MultiValue="0" name="SharePath" type="string">wwwroot$</Property>
+              <Property MultiValue="0" name="Solution" type="string">%SrcDir%\Fitting.sln</Property>
+              <Property MultiValue="1" name="SolutionConfiguration" type="string">
+                <![CDATA[%Configuration%|Mixed Platforms]]>
+              </Property>
+              <Property name="StructuredOutput" type="Boolean">False</Property>
+              <Property name="SuppressStatusMessages" type="Boolean">False</Property>
+              <Property name="TargetFramework" type="TVSDotNetTargetFx">fx40</Property>
+              <Property name="TerminateOnTimeout" type="Boolean">False</Property>
+              <Property name="TimeoutLength" type="Cardinal">2</Property>
+              <Property name="TraceConstant" type="Boolean">False</Property>
+              <Property name="UpdateAssemblyComment" type="Boolean">False</Property>
+              <Property name="UpdateAssemblyCompany" type="Boolean">False</Property>
+              <Property name="UpdateAssemblyCopyright" type="Boolean">False</Property>
+              <Property name="UpdateAssemblyDescription" type="Boolean">False</Property>
+              <Property name="UpdateAssemblyFileVersion" type="Boolean">False</Property>
+              <Property name="UpdateAssemblyInfo" type="Boolean">False</Property>
+              <Property name="UpdateAssemblyProductName" type="Boolean">False</Property>
+              <Property name="UpdateAssemblyTitle" type="Boolean">False</Property>
+              <Property name="UpdateAssemblyTradeMark" type="Boolean">False</Property>
+              <Property name="UpdateAssemblyVersion" type="Boolean">False</Property>
+              <Property name="UpdateWin32Resource" type="Boolean">False</Property>
+              <Property name="UseDotNetPropertySet" type="Boolean">False</Property>
+              <Property name="UseEnv" type="Boolean">False</Property>
+              <Property name="UseErrorDialogMonitor" type="Boolean">False</Property>
+              <Property name="UseMSBuild" type="Boolean">True</Property>
+              <Property name="UseRegExOnConfigName" type="Boolean">False</Property>
+              <Property name="UseWin32PropertySet" type="Boolean">False</Property>
+              <Property MultiValue="1" name="VersionInfoKeys" type="string">
+                <![CDATA[FileVersion=0.0.0.0
+]]>
+              </Property>
+              <Property name="VStudioVersion" type="TVSDotNetVersion">vs2012</Property>
+              <Property name="WarningLevel" type="Integer">4</Property>
+              <Property MultiValue="0" name="WarningsAsErrors" type="string"></Property>
+              <Property MultiValue="0" name="WebDAVPassword" type="string"></Property>
+              <Property MultiValue="0" name="WebDAVUsername" type="string"></Property>
+              <Property MultiValue="0" name="Win32VersionInfoPropertySetName" type="string"></Property>
+              <Property name="WMIWebsiteNum" type="Integer">1</Property>
+              <Property MultiValue="0" name="_WebDAVPassword" type="string"></Property>
+            </Object>
+          </Object>
+        </Object>
+        <Object Class="TFBActionListParametersCollection" XMLID="{E6F83852-C7FC-41CB-8CD7-3B8B2C225BAB}"/>
+      </Object>
+      <Object Class="TFBActionList" XMLID="{CFAD5B50-760C-4DFE-AB04-78CFC936241A}">
+        <Property name="IsFailure" type="Boolean">False</Property>
+        <Property name="IsMain" type="Boolean">False</Property>
+        <Property MultiValue="0" name="Name" type="string">Finalize</Property>
+        <Property MultiValue="0" name="UniqueID" type="string">{91355BA9-F936-4915-8537-1AE6D6D1ABAF}</Property>
+        <Object Class="TFBAction" XMLID="{20041E72-000E-470E-95B1-6D39BE18E3D3}">
+          <Property MultiValue="0" name="ActionComment" type="string"></Property>
+          <Property MultiValue="0" name="ActionDescription" type="string">FinalBuilderAction</Property>
+          <Property name="ActionTextColor" type="Cardinal">0</Property>
+          <Property MultiValue="0" name="ActionTypeID" type="string"></Property>
+          <Property name="Enabled" type="Boolean">True</Property>
+          <Property name="ExpandActionLogTitle" type="Boolean">True</Property>
+          <Property name="HideActionFromLog" type="Boolean">False</Property>
+          <Property name="IgnoreFailure" type="Boolean">False</Property>
+          <Property name="Locked" type="Boolean">False</Property>
+          <Property name="LogActionProperties" type="Boolean">False</Property>
+          <Property MultiValue="0" name="LogToVariable" type="TVariableName"></Property>
+          <Property name="MaxRetryAttempts" type="Cardinal">0</Property>
+          <Property name="PauseInterval" type="Cardinal">0</Property>
+          <Property name="RetryPauseInterval" type="Cardinal">1000</Property>
+          <Property name="SuppressStatusMessages" type="Boolean">False</Property>
+          <Object Class="TFBSetBuildStatusMessage" XMLID="{955AD555-EC65-464E-8BFE-FF8D8FE024C7}">
+            <Property MultiValue="0" name="ActionComment" type="string"></Property>
+            <Property MultiValue="1" name="ActionDescription" type="string">
+              <![CDATA[Set Build Status Message to &quot;Finalize...&quot;]]>
+            </Property>
+            <Property name="ActionTextColor" type="Cardinal">0</Property>
+            <Property MultiValue="0" name="ActionTypeID" type="string"></Property>
+            <Property name="Enabled" type="Boolean">True</Property>
+            <Property name="ExpandActionLogTitle" type="Boolean">True</Property>
+            <Property name="HideActionFromLog" type="Boolean">False</Property>
+            <Property name="IgnoreFailure" type="Boolean">True</Property>
+            <Property name="IsBold" type="Boolean">True</Property>
+            <Property name="Locked" type="Boolean">False</Property>
+            <Property name="LogActionProperties" type="Boolean">False</Property>
+            <Property MultiValue="0" name="LogToVariable" type="TVariableName"></Property>
+            <Property name="MaxRetryAttempts" type="Cardinal">0</Property>
+            <Property name="PauseInterval" type="Cardinal">0</Property>
+            <Property name="RetryPauseInterval" type="Cardinal">1000</Property>
+            <Property name="SetBold" type="Boolean">True</Property>
+            <Property name="SetColour" type="Boolean">True</Property>
+            <Property MultiValue="0" name="StatusMessage" type="string">Finalize...</Property>
+            <Property name="SuppressStatusMessages" type="Boolean">False</Property>
+            <Property name="TheColour" type="TColor">16711680</Property>
+          </Object>
+          <Object Class="TFBIfThenAction" XMLID="{CF7EAF14-219C-46D1-ACAB-B0B619EA3C5A}">
+            <Property MultiValue="0" name="ActionComment" type="string"></Property>
+            <Property MultiValue="1" name="ActionDescription" type="string">
+              <![CDATA[If [%BuildType%] = [NOBUILD]  and  [%BuildLocalId%] = [Current]]]>
+            </Property>
+            <Property name="ActionTextColor" type="Cardinal">0</Property>
+            <Property MultiValue="0" name="ActionTypeID" type="string"></Property>
+            <Property name="Enabled" type="Boolean">True</Property>
+            <Property name="ExpandActionLogTitle" type="Boolean">False</Property>
+            <Property name="HideActionFromLog" type="Boolean">False</Property>
+            <Property name="IgnoreFailure" type="Boolean">False</Property>
+            <Property MultiValue="1" name="LHSStorageString" type="string">
+              <![CDATA[%BuildType%
+%BuildLocalId%
+]]>
+            </Property>
+            <Property name="Locked" type="Boolean">False</Property>
+            <Property name="LogActionProperties" type="Boolean">False</Property>
+            <Property MultiValue="0" name="LogToVariable" type="TVariableName"></Property>
+            <Property name="MaxRetryAttempts" type="Cardinal">0</Property>
+            <Property MultiValue="1" name="OperatorsStorageString" type="string">
+              <![CDATA[=
+=
+]]>
+            </Property>
+            <Property name="PauseInterval" type="Cardinal">0</Property>
+            <Property name="ResultInLogTitle" type="Boolean">True</Property>
+            <Property name="RetryPauseInterval" type="Cardinal">1000</Property>
+            <Property MultiValue="1" name="RHSStorageString" type="string">
+              <![CDATA[NOBUILD
+Current
+]]>
+            </Property>
+            <Property name="ShortCircuitEvaluation" type="Boolean">True</Property>
+            <Property name="SuppressStatusMessages" type="Boolean">False</Property>
+            <Property name="TermJoiner" type="TFBIfTermJoiner">jwAnd</Property>
+            <Object Class="TFBSetBuildStatusMessage" XMLID="{87D8EE61-161C-4998-BF13-4371BDA57A10}">
+              <Property MultiValue="0" name="ActionComment" type="string"></Property>
+              <Property MultiValue="1" name="ActionDescription" type="string">
+                <![CDATA[Set Build Status Message to &quot;Slet af NOBUILD folderen i %ReleasePath%&quot;]]>
+              </Property>
+              <Property name="ActionTextColor" type="Cardinal">0</Property>
+              <Property MultiValue="0" name="ActionTypeID" type="string"></Property>
+              <Property name="Enabled" type="Boolean">True</Property>
+              <Property name="ExpandActionLogTitle" type="Boolean">True</Property>
+              <Property name="HideActionFromLog" type="Boolean">False</Property>
+              <Property name="IgnoreFailure" type="Boolean">True</Property>
+              <Property name="IsBold" type="Boolean">True</Property>
+              <Property name="Locked" type="Boolean">False</Property>
+              <Property name="LogActionProperties" type="Boolean">False</Property>
+              <Property MultiValue="0" name="LogToVariable" type="TVariableName"></Property>
+              <Property name="MaxRetryAttempts" type="Cardinal">0</Property>
+              <Property name="PauseInterval" type="Cardinal">0</Property>
+              <Property name="RetryPauseInterval" type="Cardinal">1000</Property>
+              <Property name="SetBold" type="Boolean">True</Property>
+              <Property name="SetColour" type="Boolean">True</Property>
+              <Property MultiValue="1" name="StatusMessage" type="string">
+                <![CDATA[Slet af NOBUILD folderen i %ReleasePath%]]>
+              </Property>
+              <Property name="SuppressStatusMessages" type="Boolean">False</Property>
+              <Property name="TheColour" type="TColor">255</Property>
+            </Object>
+            <Object Class="TDeleteDirectoryAction" XMLID="{7FF5E84F-F32B-446F-B418-A8D699C9A9F9}">
+              <Property MultiValue="0" name="ActionComment" type="string"></Property>
+              <Property MultiValue="1" name="ActionDescription" type="string">
+                <![CDATA[Delete Tree [ %ReleasePath% ]]]>
+              </Property>
+              <Property name="ActionTextColor" type="Cardinal">0</Property>
+              <Property MultiValue="0" name="ActionTypeID" type="string"></Property>
+              <Property name="DeleteHidden" type="Boolean">False</Property>
+              <Property name="DeleteReadOnly" type="Boolean">False</Property>
+              <Property name="DeleteTree" type="Boolean">True</Property>
+              <Property name="Enabled" type="Boolean">True</Property>
+              <Property name="EnableDelay" type="Boolean">False</Property>
+              <Property name="ExpandActionLogTitle" type="Boolean">True</Property>
+              <Property name="FailIfNoDirectory" type="Boolean">False</Property>
+              <Property MultiValue="0" name="FileOrDirectory" type="string">%ReleasePath%</Property>
+              <Property name="Force" type="Boolean">False</Property>
+              <Property name="HideActionFromLog" type="Boolean">False</Property>
+              <Property name="IgnoreFailure" type="Boolean">True</Property>
+              <Property name="Locked" type="Boolean">False</Property>
+              <Property name="LogActionProperties" type="Boolean">False</Property>
+              <Property name="LogDeletedFiles" type="Boolean">False</Property>
+              <Property MultiValue="0" name="LogToVariable" type="TVariableName"></Property>
+              <Property name="MaxRetryAttempts" type="Cardinal">0</Property>
+              <Property name="PauseInterval" type="Cardinal">0</Property>
+              <Property name="RetryPauseInterval" type="Cardinal">1000</Property>
+              <Property name="SuppressStatusMessages" type="Boolean">False</Property>
+            </Object>
+          </Object>
+          <Object Class="TGroupAction" XMLID="{D89CD469-EEEA-4280-9CEF-D92F8BF89D7C}">
+            <Property MultiValue="0" name="ActionComment" type="string"></Property>
+            <Property MultiValue="0" name="ActionDescription" type="string">FileCopy</Property>
+            <Property name="ActionTextColor" type="Cardinal">0</Property>
+            <Property MultiValue="0" name="ActionTypeID" type="string"></Property>
+            <Property MultiValue="0" name="Description" type="string">FileCopy</Property>
+            <Property name="Enabled" type="Boolean">True</Property>
+            <Property name="ExpandActionLogTitle" type="Boolean">True</Property>
+            <Property name="HideActionFromLog" type="Boolean">False</Property>
+            <Property name="IgnoreFailure" type="Boolean">False</Property>
+            <Property name="Locked" type="Boolean">False</Property>
+            <Property name="LogActionProperties" type="Boolean">False</Property>
+            <Property MultiValue="0" name="LogToVariable" type="TVariableName"></Property>
+            <Property name="MaxRetryAttempts" type="Cardinal">0</Property>
+            <Property name="PauseInterval" type="Cardinal">0</Property>
+            <Property name="RetryPauseInterval" type="Cardinal">1000</Property>
+            <Property name="SuppressStatusMessages" type="Boolean">False</Property>
+            <Object Class="TFBVariable" XMLID="{CF7D4084-3D83-4896-959F-52B3B0182272}">
+              <Property name="BasicType" type="TBasicType">btVariant</Property>
+              <Property MultiValue="0" name="Comment" type="string"></Property>
+              <Property MultiValue="0" name="DefaultValue" type="string">%Root%\Release</Property>
+              <Property MultiValue="0" name="FormatString" type="string"></Property>
+              <Property MultiValue="0" name="GroupName" type="string"></Property>
+              <Property name="IsMacro" type="Boolean">False</Property>
+              <Property name="IsPersistent" type="Boolean">False</Property>
+              <Property name="MakeEnv" type="Boolean">False</Property>
+              <Property MultiValue="0" name="Name" type="string">FinalDir</Property>
+              <Property name="VariableScope" type="TFBVariableScope">vtProject</Property>
+            </Object>
+            <Object Class="TCommentAction" XMLID="{D72D75B4-98C5-4EBE-931A-B455EC3D54B5}">
+              <Property MultiValue="1" name="ActionComment" type="string">
+                <![CDATA[Pt. kopier vi til release drevet. På sigt måske et ftp.]]>
+              </Property>
+              <Property MultiValue="1" name="ActionDescription" type="string">
+                <![CDATA[Samle hele releasen lokalt inkl. logs]]>
+              </Property>
+              <Property name="ActionTextColor" type="Cardinal">16711680</Property>
+              <Property MultiValue="0" name="ActionTypeID" type="string"></Property>
+              <Property MultiValue="1" name="Description" type="string">
+                <![CDATA[Samle hele releasen lokalt inkl. logs]]>
+              </Property>
+              <Property name="Enabled" type="Boolean">True</Property>
+              <Property name="ExpandActionLogTitle" type="Boolean">True</Property>
+              <Property name="HideActionFromLog" type="Boolean">False</Property>
+              <Property name="IgnoreFailure" type="Boolean">False</Property>
+              <Property name="Locked" type="Boolean">False</Property>
+              <Property name="LogActionProperties" type="Boolean">False</Property>
+              <Property MultiValue="0" name="LogToVariable" type="TVariableName"></Property>
+              <Property name="MaxRetryAttempts" type="Cardinal">0</Property>
+              <Property name="PauseInterval" type="Cardinal">0</Property>
+              <Property name="RetryPauseInterval" type="Cardinal">1000</Property>
+              <Property name="SuppressStatusMessages" type="Boolean">False</Property>
+            </Object>
+            <Object Class="TDeleteDirectoryAction" XMLID="{E8A74630-AA9A-4581-8735-6E7397AEE64A}">
+              <Property MultiValue="0" name="ActionComment" type="string"></Property>
+              <Property MultiValue="1" name="ActionDescription" type="string">
+                <![CDATA[Delete Tree [ %FinalDir% ]]]>
+              </Property>
+              <Property name="ActionTextColor" type="Cardinal">0</Property>
+              <Property MultiValue="0" name="ActionTypeID" type="string"></Property>
+              <Property name="DeleteHidden" type="Boolean">False</Property>
+              <Property name="DeleteReadOnly" type="Boolean">False</Property>
+              <Property name="DeleteTree" type="Boolean">True</Property>
+              <Property name="Enabled" type="Boolean">True</Property>
+              <Property name="EnableDelay" type="Boolean">False</Property>
+              <Property name="ExpandActionLogTitle" type="Boolean">True</Property>
+              <Property name="FailIfNoDirectory" type="Boolean">False</Property>
+              <Property MultiValue="0" name="FileOrDirectory" type="string">%FinalDir%</Property>
+              <Property name="Force" type="Boolean">False</Property>
+              <Property name="HideActionFromLog" type="Boolean">False</Property>
+              <Property name="IgnoreFailure" type="Boolean">True</Property>
+              <Property name="Locked" type="Boolean">False</Property>
+              <Property name="LogActionProperties" type="Boolean">False</Property>
+              <Property name="LogDeletedFiles" type="Boolean">False</Property>
+              <Property MultiValue="0" name="LogToVariable" type="TVariableName"></Property>
+              <Property name="MaxRetryAttempts" type="Cardinal">0</Property>
+              <Property name="PauseInterval" type="Cardinal">0</Property>
+              <Property name="RetryPauseInterval" type="Cardinal">1000</Property>
+              <Property name="SuppressStatusMessages" type="Boolean">False</Property>
+            </Object>
+            <Object Class="TCreateDirectoryAction" XMLID="{AA6CAF5E-F24D-4D9A-82C5-7652001DD6A8}">
+              <Property MultiValue="0" name="ActionComment" type="string"></Property>
+              <Property MultiValue="1" name="ActionDescription" type="string">
+                <![CDATA[Create Directory [ %FinalDir% ]]]>
+              </Property>
+              <Property name="ActionTextColor" type="Cardinal">0</Property>
+              <Property MultiValue="0" name="ActionTypeID" type="string"></Property>
+              <Property name="Enabled" type="Boolean">True</Property>
+              <Property name="ExpandActionLogTitle" type="Boolean">True</Property>
+              <Property MultiValue="0" name="FileOrDirectory" type="string">%FinalDir%</Property>
+              <Property name="Force" type="Boolean">False</Property>
+              <Property name="HideActionFromLog" type="Boolean">False</Property>
+              <Property name="IgnoreFailure" type="Boolean">False</Property>
+              <Property name="Locked" type="Boolean">False</Property>
+              <Property name="LogActionProperties" type="Boolean">False</Property>
+              <Property MultiValue="0" name="LogToVariable" type="TVariableName"></Property>
+              <Property name="MaxRetryAttempts" type="Cardinal">0</Property>
+              <Property name="PauseInterval" type="Cardinal">0</Property>
+              <Property name="RetryPauseInterval" type="Cardinal">1000</Property>
+              <Property name="SuppressStatusMessages" type="Boolean">False</Property>
+            </Object>
+            <Object Class="TFBRobocopyCopyAction" XMLID="{29A09511-2B28-45AB-A8C2-08C9B2C3A3D7}">
+              <Property MultiValue="0" name="ActionComment" type="string"></Property>
+              <Property MultiValue="1" name="ActionDescription" type="string">
+                <![CDATA[Robocopy [ Copy %ProductRoot%\Autodoc to %FinalDir%\Autodoc ]]]>
+              </Property>
+              <Property name="ActionTextColor" type="Cardinal">0</Property>
+              <Property MultiValue="0" name="ActionTypeID" type="string"></Property>
+              <Property name="AppendToLogFile" type="Boolean">False</Property>
+              <Property name="CopyFlags" type="TRobocopyCFSet">[cfData,cfAttrib,cfTimestamps]</Property>
+              <Property name="DelayToFreeUpBandwidth" type="Cardinal">0</Property>
+              <Property MultiValue="0" name="DestDir" type="string">%FinalDir%\Autodoc</Property>
+              <Property name="DisableLoggingDirNames" type="Boolean">False</Property>
+              <Property name="DisableLoggingFileNames" type="Boolean">False</Property>
+              <Property name="DisableLoggingJobHeader" type="Boolean">False</Property>
+              <Property name="DisableLoggingJobSummary" type="Boolean">False</Property>
+              <Property name="DisplayFileTimestamps" type="Boolean">False</Property>
+              <Property name="DisplayFullPathnames" type="Boolean">False</Property>
+              <Property name="DoIncludeUsingAttrib" type="Boolean">False</Property>
+              <Property name="Enabled" type="Boolean">True</Property>
+              <Property name="EnableTimeout" type="Boolean">False</Property>
+              <Property name="ExcludeDirs" type="TStrings">
+                <![CDATA[]]>
+              </Property>
+              <Property name="ExcludeFiles" type="TStrings">
+                <![CDATA[]]>
+              </Property>
+              <Property name="ExcludeFilesAttrib" type="TRobocopyAttribFullSet">[]</Property>
+              <Property name="ExcludeJunctionPoints" type="Boolean">False</Property>
+              <Property name="ExcludeLADNewFiles" type="Boolean">False</Property>
+              <Property name="ExcludeLADOldFiles" type="Boolean">False</Property>
+              <Property name="ExcludeLargeFiles" type="Boolean">False</Property>
+              <Property name="ExcludeNewFiles" type="Boolean">False</Property>
+              <Property name="ExcludeOldFiles" type="Boolean">False</Property>
+              <Property name="ExcludeSmallFiles" type="Boolean">False</Property>
+              <Property name="ExcludeTaggedChanged" type="Boolean">False</Property>
+              <Property name="ExcludeTaggedExtra" type="Boolean">False</Property>
+              <Property name="ExcludeTaggedLonely" type="Boolean">False</Property>
+              <Property name="ExcludeTaggedNewer" type="Boolean">False</Property>
+              <Property name="ExcludeTaggedOlder" type="Boolean">False</Property>
+              <Property name="ExpandActionLogTitle" type="Boolean">True</Property>
+              <Property name="ExpandImpersonationToken" type="Boolean">False</Property>
+              <Property name="ExtraCmdLine" type="TStrings">
+                <![CDATA[]]>
+              </Property>
+              <Property MultiValue="0" name="ExtraCmdLineParamsAtEnd" type="string"></Property>
+              <Property MultiValue="0" name="ExtraCmdLineParamsAtStart" type="string"></Property>
+              <Property name="FATFileNames" type="Boolean">False</Property>
+              <Property name="FATFileTimes" type="Boolean">False</Property>
+              <Property name="HideActionFromLog" type="Boolean">False</Property>
+              <Property name="HideWindow" type="Boolean">True</Property>
+              <Property name="IgnoreFailure" type="Boolean">True</Property>
+              <Property MultiValue="0" name="ImpersonateToken" type="string"></Property>
+              <Property name="ImpersonateUseNetCredOnly" type="Boolean">False</Property>
+              <Property name="ImpersonateUser" type="Boolean">False</Property>
+              <Property MultiValue="0" name="ImpersonateUserName" type="string"></Property>
+              <Property name="IncludeEmptyDirs" type="Boolean">False</Property>
+              <Property name="IncludeFiles" type="TStrings">
+                <![CDATA[]]>
+              </Property>
+              <Property name="IncludeFilesAttrib" type="TRobocopyAttribFullSet">[]</Property>
+              <Property name="IncludeSubDirs" type="Boolean">True</Property>
+              <Property name="IncludeTaggedSame" type="Boolean">False</Property>
+              <Property name="IncludeTaggedTweaked" type="Boolean">False</Property>
+              <Property name="Locked" type="Boolean">False</Property>
+              <Property name="LogActionProperties" type="Boolean">False</Property>
+              <Property MultiValue="0" name="LogFile" type="string"></Property>
+              <Property name="LogProcessParameters" type="Boolean">True</Property>
+              <Property MultiValue="0" name="LogToVariable" type="TVariableName"></Property>
+              <Property name="MaxAgeDate" type="TDate">0</Property>
+              <Property name="MaxAgeDays" type="Cardinal">1</Property>
+              <Property name="MaxFileSizeBytes" type="Cardinal">1</Property>
+              <Property name="MaxLADDate" type="TDate">0</Property>
+              <Property name="MaxLADDays" type="Cardinal">1</Property>
+              <Property name="MaxRetryAttempts" type="Cardinal">0</Property>
+              <Property name="MinAgeDate" type="TDate">0</Property>
+              <Property name="MinAgeDays" type="Cardinal">1</Property>
+              <Property name="MinFileSizeBytes" type="Cardinal">1</Property>
+              <Property name="MinLADDate" type="TDate">0</Property>
+              <Property name="MinLADDays" type="Cardinal">1</Property>
+              <Property name="OnlyArchiveFilesAndClearArchiveBit" type="Boolean">False</Property>
+              <Property name="OnlyListFiles" type="Boolean">False</Property>
+              <Property name="PauseInterval" type="Cardinal">0</Property>
+              <Property name="ProcessorAffinity" type="Cardinal">0</Property>
+              <Property name="ProcessPriority" type="TFBExecuteThreadPriority">tpNormal</Property>
+              <Property name="ReportExtraFiles" type="Boolean">False</Property>
+              <Property name="RestartableMode" type="Boolean">False</Property>
+              <Property name="Retries" type="Integer">10</Property>
+              <Property name="RetryPauseInterval" type="Cardinal">1000</Property>
+              <Property name="RetryWaitSec" type="Integer">60</Property>
+              <Property name="SetAttribInCopiedFiles" type="TRobocopyAttribSet">[]</Property>
+              <Property MultiValue="0" name="SourceDir" type="string">%ProductRoot%\Autodoc</Property>
+              <Property name="SuppressFileClasses" type="Boolean">False</Property>
+              <Property name="SuppressFileDirSizes" type="Boolean">False</Property>
+              <Property name="SuppressStatusMessages" type="Boolean">False</Property>
+              <Property name="TerminateOnTimeout" type="Boolean">False</Property>
+              <Property name="TimeoutLength" type="Cardinal">2</Property>
+              <Property name="TurnOffAttribInCopiedFiles" type="TRobocopyAttribSet">[]</Property>
+              <Property name="UseErrorDialogMonitor" type="Boolean">False</Property>
+              <Property name="UseMaxAgeDays" type="Boolean">False</Property>
+              <Property name="UseMaxLADDays" type="Boolean">False</Property>
+              <Property name="UseMinAgeDays" type="Boolean">False</Property>
+              <Property name="UseMinLADDays" type="Boolean">False</Property>
+              <Property name="VerboseOutput" type="Boolean">False</Property>
+              <Property name="WaitForSharesToBeDefined" type="Boolean">False</Property>
+            </Object>
+            <Object Class="TCommentAction" XMLID="{D500DD70-6812-48B8-9FF3-2912842F96D6}">
+              <Property MultiValue="1" name="ActionComment" type="string">
+                <![CDATA[Pt. kopier vi til release drevet. På sigt måske et ftp]]>
+              </Property>
+              <Property MultiValue="1" name="ActionDescription" type="string">
+                <![CDATA[Publisher releasen]]>
+              </Property>
+              <Property name="ActionTextColor" type="Cardinal">16711680</Property>
+              <Property MultiValue="0" name="ActionTypeID" type="string"></Property>
+              <Property MultiValue="1" name="Description" type="string">
+                <![CDATA[Publisher releasen]]>
+              </Property>
+              <Property name="Enabled" type="Boolean">True</Property>
+              <Property name="ExpandActionLogTitle" type="Boolean">True</Property>
+              <Property name="HideActionFromLog" type="Boolean">False</Property>
+              <Property name="IgnoreFailure" type="Boolean">False</Property>
+              <Property name="Locked" type="Boolean">False</Property>
+              <Property name="LogActionProperties" type="Boolean">False</Property>
+              <Property MultiValue="0" name="LogToVariable" type="TVariableName"></Property>
+              <Property name="MaxRetryAttempts" type="Cardinal">0</Property>
+              <Property name="PauseInterval" type="Cardinal">0</Property>
+              <Property name="RetryPauseInterval" type="Cardinal">1000</Property>
+              <Property name="SuppressStatusMessages" type="Boolean">False</Property>
+            </Object>
+            <Object Class="TFBRobocopyCopyAction" XMLID="{2C9ECDF6-7556-4887-90E2-EC0A691F286B}">
+              <Property MultiValue="0" name="ActionComment" type="string"></Property>
+              <Property MultiValue="1" name="ActionDescription" type="string">
+                <![CDATA[Robocopy [ Copy %FinalDir% to %ReleasePath% ]]]>
+              </Property>
+              <Property name="ActionTextColor" type="Cardinal">0</Property>
+              <Property MultiValue="0" name="ActionTypeID" type="string"></Property>
+              <Property name="AppendToLogFile" type="Boolean">False</Property>
+              <Property name="CopyFlags" type="TRobocopyCFSet">[cfData,cfAttrib,cfTimestamps]</Property>
+              <Property name="DelayToFreeUpBandwidth" type="Cardinal">0</Property>
+              <Property MultiValue="0" name="DestDir" type="string">%ReleasePath%</Property>
+              <Property name="DisableLoggingDirNames" type="Boolean">False</Property>
+              <Property name="DisableLoggingFileNames" type="Boolean">False</Property>
+              <Property name="DisableLoggingJobHeader" type="Boolean">False</Property>
+              <Property name="DisableLoggingJobSummary" type="Boolean">False</Property>
+              <Property name="DisplayFileTimestamps" type="Boolean">False</Property>
+              <Property name="DisplayFullPathnames" type="Boolean">False</Property>
+              <Property name="DoIncludeUsingAttrib" type="Boolean">False</Property>
+              <Property name="Enabled" type="Boolean">True</Property>
+              <Property name="EnableTimeout" type="Boolean">False</Property>
+              <Property name="ExcludeDirs" type="TStrings">
+                <![CDATA[]]>
+              </Property>
+              <Property name="ExcludeFiles" type="TStrings">
+                <![CDATA[]]>
+              </Property>
+              <Property name="ExcludeFilesAttrib" type="TRobocopyAttribFullSet">[]</Property>
+              <Property name="ExcludeJunctionPoints" type="Boolean">False</Property>
+              <Property name="ExcludeLADNewFiles" type="Boolean">False</Property>
+              <Property name="ExcludeLADOldFiles" type="Boolean">False</Property>
+              <Property name="ExcludeLargeFiles" type="Boolean">False</Property>
+              <Property name="ExcludeNewFiles" type="Boolean">False</Property>
+              <Property name="ExcludeOldFiles" type="Boolean">False</Property>
+              <Property name="ExcludeSmallFiles" type="Boolean">False</Property>
+              <Property name="ExcludeTaggedChanged" type="Boolean">False</Property>
+              <Property name="ExcludeTaggedExtra" type="Boolean">False</Property>
+              <Property name="ExcludeTaggedLonely" type="Boolean">False</Property>
+              <Property name="ExcludeTaggedNewer" type="Boolean">False</Property>
+              <Property name="ExcludeTaggedOlder" type="Boolean">False</Property>
+              <Property name="ExpandActionLogTitle" type="Boolean">True</Property>
+              <Property name="ExpandImpersonationToken" type="Boolean">False</Property>
+              <Property name="ExtraCmdLine" type="TStrings">
+                <![CDATA[]]>
+              </Property>
+              <Property MultiValue="0" name="ExtraCmdLineParamsAtEnd" type="string"></Property>
+              <Property MultiValue="0" name="ExtraCmdLineParamsAtStart" type="string"></Property>
+              <Property name="FATFileNames" type="Boolean">False</Property>
+              <Property name="FATFileTimes" type="Boolean">False</Property>
+              <Property name="HideActionFromLog" type="Boolean">False</Property>
+              <Property name="HideWindow" type="Boolean">True</Property>
+              <Property name="IgnoreFailure" type="Boolean">False</Property>
+              <Property MultiValue="0" name="ImpersonateToken" type="string"></Property>
+              <Property name="ImpersonateUseNetCredOnly" type="Boolean">False</Property>
+              <Property name="ImpersonateUser" type="Boolean">False</Property>
+              <Property MultiValue="0" name="ImpersonateUserName" type="string"></Property>
+              <Property name="IncludeEmptyDirs" type="Boolean">True</Property>
+              <Property name="IncludeFiles" type="TStrings">
+                <![CDATA[]]>
+              </Property>
+              <Property name="IncludeFilesAttrib" type="TRobocopyAttribFullSet">[]</Property>
+              <Property name="IncludeSubDirs" type="Boolean">True</Property>
+              <Property name="IncludeTaggedSame" type="Boolean">False</Property>
+              <Property name="IncludeTaggedTweaked" type="Boolean">False</Property>
+              <Property name="Locked" type="Boolean">False</Property>
+              <Property name="LogActionProperties" type="Boolean">False</Property>
+              <Property MultiValue="0" name="LogFile" type="string"></Property>
+              <Property name="LogProcessParameters" type="Boolean">True</Property>
+              <Property MultiValue="0" name="LogToVariable" type="TVariableName"></Property>
+              <Property name="MaxAgeDate" type="TDate">0</Property>
+              <Property name="MaxAgeDays" type="Cardinal">1</Property>
+              <Property name="MaxFileSizeBytes" type="Cardinal">1</Property>
+              <Property name="MaxLADDate" type="TDate">0</Property>
+              <Property name="MaxLADDays" type="Cardinal">1</Property>
+              <Property name="MaxRetryAttempts" type="Cardinal">0</Property>
+              <Property name="MinAgeDate" type="TDate">0</Property>
+              <Property name="MinAgeDays" type="Cardinal">1</Property>
+              <Property name="MinFileSizeBytes" type="Cardinal">1</Property>
+              <Property name="MinLADDate" type="TDate">0</Property>
+              <Property name="MinLADDays" type="Cardinal">1</Property>
+              <Property name="OnlyArchiveFilesAndClearArchiveBit" type="Boolean">False</Property>
+              <Property name="OnlyListFiles" type="Boolean">False</Property>
+              <Property name="PauseInterval" type="Cardinal">0</Property>
+              <Property name="ProcessorAffinity" type="Cardinal">0</Property>
+              <Property name="ProcessPriority" type="TFBExecuteThreadPriority">tpNormal</Property>
+              <Property name="ReportExtraFiles" type="Boolean">False</Property>
+              <Property name="RestartableMode" type="Boolean">False</Property>
+              <Property name="Retries" type="Integer">10</Property>
+              <Property name="RetryPauseInterval" type="Cardinal">1000</Property>
+              <Property name="RetryWaitSec" type="Integer">60</Property>
+              <Property name="SetAttribInCopiedFiles" type="TRobocopyAttribSet">[]</Property>
+              <Property MultiValue="0" name="SourceDir" type="string">%FinalDir%</Property>
+              <Property name="SuppressFileClasses" type="Boolean">False</Property>
+              <Property name="SuppressFileDirSizes" type="Boolean">False</Property>
+              <Property name="SuppressStatusMessages" type="Boolean">False</Property>
+              <Property name="TerminateOnTimeout" type="Boolean">False</Property>
+              <Property name="TimeoutLength" type="Cardinal">2</Property>
+              <Property name="TurnOffAttribInCopiedFiles" type="TRobocopyAttribSet">[]</Property>
+              <Property name="UseErrorDialogMonitor" type="Boolean">False</Property>
+              <Property name="UseMaxAgeDays" type="Boolean">False</Property>
+              <Property name="UseMaxLADDays" type="Boolean">False</Property>
+              <Property name="UseMinAgeDays" type="Boolean">False</Property>
+              <Property name="UseMinLADDays" type="Boolean">False</Property>
+              <Property name="VerboseOutput" type="Boolean">False</Property>
+              <Property name="WaitForSharesToBeDefined" type="Boolean">False</Property>
+            </Object>
+          </Object>
+        </Object>
+        <Object Class="TFBActionListParametersCollection" XMLID="{C4108D9B-1EFA-4A0C-A069-020610E7BCB4}"/>
+      </Object>
+      <Object Class="TFBActionList" XMLID="{01E9428E-FE39-431A-91EE-0857B27584A4}">
+        <Property name="IsFailure" type="Boolean">False</Property>
+        <Property name="IsMain" type="Boolean">False</Property>
+        <Property MultiValue="0" name="Name" type="string">InteractiveInit</Property>
+        <Property MultiValue="0" name="UniqueID" type="string">{8D7C39CD-1B6B-42E6-9FE4-43F67BEF10C1}</Property>
+        <Object Class="TFBAction" XMLID="{D09CABAD-AF27-484E-9212-5F0B2763C082}">
+          <Property MultiValue="0" name="ActionComment" type="string"></Property>
+          <Property MultiValue="0" name="ActionDescription" type="string">FinalBuilderAction</Property>
+          <Property name="ActionTextColor" type="Cardinal">0</Property>
+          <Property MultiValue="0" name="ActionTypeID" type="string"></Property>
+          <Property name="Enabled" type="Boolean">True</Property>
+          <Property name="ExpandActionLogTitle" type="Boolean">True</Property>
+          <Property name="HideActionFromLog" type="Boolean">False</Property>
+          <Property name="IgnoreFailure" type="Boolean">False</Property>
+          <Property name="Locked" type="Boolean">False</Property>
+          <Property name="LogActionProperties" type="Boolean">False</Property>
+          <Property MultiValue="0" name="LogToVariable" type="TVariableName"></Property>
+          <Property name="MaxRetryAttempts" type="Cardinal">0</Property>
+          <Property name="PauseInterval" type="Cardinal">0</Property>
+          <Property name="RetryPauseInterval" type="Cardinal">1000</Property>
+          <Property name="SuppressStatusMessages" type="Boolean">False</Property>
+          <Object Class="TFBIfThenAction" XMLID="{A5054BC8-587D-448F-9872-167F0DCC0D81}">
+            <Property MultiValue="1" name="ActionComment" type="string">
+              <![CDATA[Load parameters from ini file in case of Stanalone Ide run]]>
+            </Property>
+            <Property MultiValue="1" name="ActionDescription" type="string">
+              <![CDATA[If [%ISINCLUDEDPROJECT%] = [False]]]>
+            </Property>
+            <Property name="ActionTextColor" type="Cardinal">0</Property>
+            <Property MultiValue="0" name="ActionTypeID" type="string"></Property>
+            <Property name="Enabled" type="Boolean">True</Property>
+            <Property name="ExpandActionLogTitle" type="Boolean">False</Property>
+            <Property name="HideActionFromLog" type="Boolean">False</Property>
+            <Property name="IgnoreFailure" type="Boolean">False</Property>
+            <Property MultiValue="1" name="LHSStorageString" type="string">
+              <![CDATA[%ISINCLUDEDPROJECT%
+]]>
+            </Property>
+            <Property name="Locked" type="Boolean">False</Property>
+            <Property name="LogActionProperties" type="Boolean">False</Property>
+            <Property MultiValue="0" name="LogToVariable" type="TVariableName"></Property>
+            <Property name="MaxRetryAttempts" type="Cardinal">0</Property>
+            <Property MultiValue="1" name="OperatorsStorageString" type="string">
+              <![CDATA[=
+]]>
+            </Property>
+            <Property name="PauseInterval" type="Cardinal">0</Property>
+            <Property name="ResultInLogTitle" type="Boolean">True</Property>
+            <Property name="RetryPauseInterval" type="Cardinal">1000</Property>
+            <Property MultiValue="1" name="RHSStorageString" type="string">
+              <![CDATA[False
+]]>
+            </Property>
+            <Property name="ShortCircuitEvaluation" type="Boolean">True</Property>
+            <Property name="SuppressStatusMessages" type="Boolean">False</Property>
+            <Property name="TermJoiner" type="TFBIfTermJoiner">jwAnd</Property>
+            <Object Class="TFBSetBuildStatusMessage" XMLID="{94DE72E9-46E1-4A2E-B8EC-29A942ED351E}">
+              <Property MultiValue="0" name="ActionComment" type="string"></Property>
+              <Property MultiValue="1" name="ActionDescription" type="string">
+                <![CDATA[Set Build Status Message to &quot;Loading vars from INI file&quot;]]>
+              </Property>
+              <Property name="ActionTextColor" type="Cardinal">0</Property>
+              <Property MultiValue="0" name="ActionTypeID" type="string"></Property>
+              <Property name="Enabled" type="Boolean">True</Property>
+              <Property name="ExpandActionLogTitle" type="Boolean">True</Property>
+              <Property name="HideActionFromLog" type="Boolean">False</Property>
+              <Property name="IgnoreFailure" type="Boolean">True</Property>
+              <Property name="IsBold" type="Boolean">False</Property>
+              <Property name="Locked" type="Boolean">False</Property>
+              <Property name="LogActionProperties" type="Boolean">False</Property>
+              <Property MultiValue="0" name="LogToVariable" type="TVariableName"></Property>
+              <Property name="MaxRetryAttempts" type="Cardinal">0</Property>
+              <Property name="PauseInterval" type="Cardinal">0</Property>
+              <Property name="RetryPauseInterval" type="Cardinal">1000</Property>
+              <Property name="SetBold" type="Boolean">False</Property>
+              <Property name="SetColour" type="Boolean">False</Property>
+              <Property MultiValue="1" name="StatusMessage" type="string">
+                <![CDATA[Loading vars from INI file]]>
+              </Property>
+              <Property name="SuppressStatusMessages" type="Boolean">False</Property>
+              <Property name="TheColour" type="TColor">0</Property>
+            </Object>
+            <Object Class="TFBScriptBasedAction" XMLID="{15318EE2-1620-4EBA-BB23-4146DD09EC25}">
+              <Property MultiValue="0" name="ActionComment" type="string"></Property>
+              <Property MultiValue="1" name="ActionDescription" type="string">
+                <![CDATA[Set IniFile]]>
+              </Property>
+              <Property name="ActionTextColor" type="Cardinal">0</Property>
+              <Property MultiValue="0" name="ActionTypeID" type="string">{78526C82-A8E7-42B3-8C9D-1E229C79D915}</Property>
+              <Property MultiValue="1" name="CustomActionName" type="string">
+                <![CDATA[String Replace]]>
+              </Property>
+              <Property MultiValue="1" name="Description" type="string">
+                <![CDATA[Set IniFile]]>
+              </Property>
+              <Property name="Enabled" type="Boolean">True</Property>
+              <Property name="EnableTimeout" type="Boolean">False</Property>
+              <Property name="ExpandActionLogTitle" type="Boolean">True</Property>
+              <Property name="HideActionFromLog" type="Boolean">False</Property>
+              <Property name="IgnoreFailure" type="Boolean">False</Property>
+              <Property MultiValue="0" name="ImpersonateToken" type="string"></Property>
+              <Property name="ImpersonateUseNetCredOnly" type="Boolean">False</Property>
+              <Property name="ImpersonateUser" type="Boolean">False</Property>
+              <Property MultiValue="0" name="ImpersonateUserName" type="string"></Property>
+              <Property name="Locked" type="Boolean">False</Property>
+              <Property name="LogActionProperties" type="Boolean">False</Property>
+              <Property MultiValue="0" name="LogToVariable" type="TVariableName"></Property>
+              <Property name="MaxRetryAttempts" type="Cardinal">0</Property>
+              <Property name="PauseInterval" type="Cardinal">0</Property>
+              <Property name="RetryPauseInterval" type="Cardinal">1000</Property>
+              <Property name="SuppressStatusMessages" type="Boolean">False</Property>
+              <Property name="TerminateOnTimeout" type="Boolean">True</Property>
+              <Property name="TimeoutLength" type="Cardinal">1</Property>
+              <CustomProperty MultiValue="0" name="InputString" type="ptString">%FBPROJECT%</CustomProperty>
+              <CustomProperty name="ApplyToInput" type="ptBoolean">False</CustomProperty>
+              <CustomProperty name="UsingInputVariable" type="ptBoolean">False</CustomProperty>
+              <CustomProperty MultiValue="0" name="OutputVariable" type="ptString">IniFile</CustomProperty>
+              <CustomProperty MultiValue="0" name="InputVariable" type="ptString"></CustomProperty>
+              <CustomProperty MultiValue="0" name="SearchString" type="ptString">.fbp7</CustomProperty>
+              <CustomProperty MultiValue="0" name="ReplacementString" type="ptString">.ini</CustomProperty>
+              <CustomProperty name="CaseSensitive" type="ptBoolean">False</CustomProperty>
+              <CustomProperty name="ReplaceAll" type="ptBoolean">False</CustomProperty>
+            </Object>
+            <Object Class="TFBVariablesLoadAction" XMLID="{AD32E16E-616B-4B82-B2B1-0F4C7824A33C}">
+              <Property MultiValue="0" name="ActionComment" type="string"></Property>
+              <Property MultiValue="1" name="ActionDescription" type="string">
+                <![CDATA[Load Variables from INI [%IniFile%, Variables: ReleaseRoot]]]>
+              </Property>
+              <Property name="ActionTextColor" type="Cardinal">0</Property>
+              <Property MultiValue="0" name="ActionTypeID" type="string"></Property>
+              <Property name="CreateVarInINIifNotExists" type="Boolean">True</Property>
+              <Property name="Enabled" type="Boolean">True</Property>
+              <Property name="ExpandActionLogTitle" type="Boolean">True</Property>
+              <Property name="FailIfVariableNotDefined" type="Boolean">True</Property>
+              <Property name="FailIfVariableNotInIniFile" type="Boolean">False</Property>
+              <Property name="HideActionFromLog" type="Boolean">False</Property>
+              <Property name="IgnoreFailure" type="Boolean">False</Property>
+              <Property name="IgnoreFileNotFound" type="Boolean">True</Property>
+              <Property MultiValue="0" name="INIFile" type="string">%IniFile%</Property>
+              <Property name="Locked" type="Boolean">False</Property>
+              <Property name="LogActionProperties" type="Boolean">False</Property>
+              <Property MultiValue="0" name="LogToVariable" type="TVariableName"></Property>
+              <Property name="MaxRetryAttempts" type="Cardinal">0</Property>
+              <Property name="PauseInterval" type="Cardinal">0</Property>
+              <Property name="RetryPauseInterval" type="Cardinal">1000</Property>
+              <Property MultiValue="0" name="SectionName" type="string">UserInput</Property>
+              <Property name="SuppressStatusMessages" type="Boolean">False</Property>
+              <Property name="Variables" type="TStrings">
+                <![CDATA[ReleaseRoot
+]]>
+              </Property>
+              <Property name="VariableTypes" type="TStrings">
+                <![CDATA[String
+]]>
+              </Property>
+            </Object>
+          </Object>
+          <Object Class="TFBIfThenAction" XMLID="{7BD8D998-6224-4FFB-8A03-5EE5EB5F3AA3}">
+            <Property MultiValue="1" name="ActionComment" type="string">
+              <![CDATA[Prompt for parametre ved standalone Ide kørsel]]>
+            </Property>
+            <Property MultiValue="1" name="ActionDescription" type="string">
+              <![CDATA[If [%ISINTERACTIVEBUILD%] = [True]  and  [%ISINCLUDEDPROJECT%] = [False]]]>
+            </Property>
+            <Property name="ActionTextColor" type="Cardinal">0</Property>
+            <Property MultiValue="0" name="ActionTypeID" type="string"></Property>
+            <Property name="Enabled" type="Boolean">True</Property>
+            <Property name="ExpandActionLogTitle" type="Boolean">False</Property>
+            <Property name="HideActionFromLog" type="Boolean">False</Property>
+            <Property name="IgnoreFailure" type="Boolean">False</Property>
+            <Property MultiValue="1" name="LHSStorageString" type="string">
+              <![CDATA[%ISINTERACTIVEBUILD%
+%ISINCLUDEDPROJECT%
+]]>
+            </Property>
+            <Property name="Locked" type="Boolean">False</Property>
+            <Property name="LogActionProperties" type="Boolean">False</Property>
+            <Property MultiValue="0" name="LogToVariable" type="TVariableName"></Property>
+            <Property name="MaxRetryAttempts" type="Cardinal">0</Property>
+            <Property MultiValue="1" name="OperatorsStorageString" type="string">
+              <![CDATA[=
+=
+]]>
+            </Property>
+            <Property name="PauseInterval" type="Cardinal">0</Property>
+            <Property name="ResultInLogTitle" type="Boolean">True</Property>
+            <Property name="RetryPauseInterval" type="Cardinal">1000</Property>
+            <Property MultiValue="1" name="RHSStorageString" type="string">
+              <![CDATA[True
+False
+]]>
+            </Property>
+            <Property name="ShortCircuitEvaluation" type="Boolean">True</Property>
+            <Property name="SuppressStatusMessages" type="Boolean">False</Property>
+            <Property name="TermJoiner" type="TFBIfTermJoiner">jwAnd</Property>
+            <Object Class="TRunActionListAction" XMLID="{D4328A0F-FC97-4A7C-AF00-378B9D75B4FA}">
+              <Property MultiValue="1" name="ActionComment" type="string">
+                <![CDATA[Preload init values to have nice presets in prompts.]]>
+              </Property>
+              <Property MultiValue="1" name="ActionDescription" type="string">
+                <![CDATA[Run Action List [ Init ]]]>
+              </Property>
+              <Property MultiValue="0" name="ActionListID" type="string">{754A43B1-DE8D-4B47-BBA6-783561CA3878}</Property>
+              <Property name="ActionTextColor" type="Cardinal">0</Property>
+              <Property MultiValue="0" name="ActionTypeID" type="string"></Property>
+              <Property name="Enabled" type="Boolean">True</Property>
+              <Property name="ExpandActionLogTitle" type="Boolean">True</Property>
+              <Property name="FailIfActionListEmpty" type="Boolean">False</Property>
+              <Property name="HideActionFromLog" type="Boolean">False</Property>
+              <Property name="IgnoreFailure" type="Boolean">False</Property>
+              <Property name="Locked" type="Boolean">False</Property>
+              <Property name="LogActionProperties" type="Boolean">False</Property>
+              <Property MultiValue="0" name="LogToVariable" type="TVariableName"></Property>
+              <Property name="MaxRetryAttempts" type="Cardinal">0</Property>
+              <Property name="Parameters" type="TStrings">
+                <![CDATA[]]>
+              </Property>
+              <Property name="PauseInterval" type="Cardinal">0</Property>
+              <Property name="RetryPauseInterval" type="Cardinal">1000</Property>
+              <Property name="SuppressStatusMessages" type="Boolean">False</Property>
+            </Object>
+            <Object Class="TFBSetBuildStatusMessage" XMLID="{512E9277-72CC-4589-A15C-3396A6377351}">
+              <Property MultiValue="0" name="ActionComment" type="string"></Property>
+              <Property MultiValue="1" name="ActionDescription" type="string">
+                <![CDATA[Set Build Status Message to &quot;Prompt for build variables when run in IDE&quot;]]>
+              </Property>
+              <Property name="ActionTextColor" type="Cardinal">0</Property>
+              <Property MultiValue="0" name="ActionTypeID" type="string"></Property>
+              <Property name="Enabled" type="Boolean">True</Property>
+              <Property name="ExpandActionLogTitle" type="Boolean">True</Property>
+              <Property name="HideActionFromLog" type="Boolean">False</Property>
+              <Property name="IgnoreFailure" type="Boolean">True</Property>
+              <Property name="IsBold" type="Boolean">True</Property>
+              <Property name="Locked" type="Boolean">False</Property>
+              <Property name="LogActionProperties" type="Boolean">False</Property>
+              <Property MultiValue="0" name="LogToVariable" type="TVariableName"></Property>
+              <Property name="MaxRetryAttempts" type="Cardinal">0</Property>
+              <Property name="PauseInterval" type="Cardinal">0</Property>
+              <Property name="RetryPauseInterval" type="Cardinal">1000</Property>
+              <Property name="SetBold" type="Boolean">True</Property>
+              <Property name="SetColour" type="Boolean">True</Property>
+              <Property MultiValue="1" name="StatusMessage" type="string">
+                <![CDATA[Prompt for build variables when run in IDE]]>
+              </Property>
+              <Property name="SuppressStatusMessages" type="Boolean">False</Property>
+              <Property name="TheColour" type="TColor">255</Property>
+            </Object>
+            <Object Class="TFBDialogBuilderAction" XMLID="{069736C7-03E4-43F0-AF5E-A979F61E81DA}">
+              <Property MultiValue="0" name="ActionComment" type="string"></Property>
+              <Property MultiValue="1" name="ActionDescription" type="string">
+                <![CDATA[Enhanced Prompt for Variables [ Standalone parameters - BuildType,BuildParams,Configuration,ReleaseRoot ]]]>
+              </Property>
+              <Property name="ActionTextColor" type="Cardinal">0</Property>
+              <Property MultiValue="0" name="ActionTypeID" type="string"></Property>
+              <Property name="DefaultButton" type="Boolean">True</Property>
+              <Property MultiValue="1" name="DialogCaption" type="string">
+                <![CDATA[Standalone parameters]]>
+              </Property>
+              <Property name="DialogWidth" type="Integer">200</Property>
+              <Property name="Enabled" type="Boolean">True</Property>
+              <Property name="ExpandActionLogTitle" type="Boolean">True</Property>
+              <Property name="ExpandUserEnteredValues" type="Boolean">True</Property>
+              <Property name="ExpandVar" type="Boolean">True</Property>
+              <Property name="ExpandVariables" type="Boolean"></Property>
+              <Property name="FailOnError" type="Boolean">False</Property>
+              <Property name="HideActionFromLog" type="Boolean">False</Property>
+              <Property name="IgnoreFailure" type="Boolean">False</Property>
+              <Property name="Locked" type="Boolean">False</Property>
+              <Property name="LogActionProperties" type="Boolean">False</Property>
+              <Property MultiValue="0" name="LogToVariable" type="TVariableName"></Property>
+              <Property name="MaxRetryAttempts" type="Cardinal">0</Property>
+              <Property name="PauseInterval" type="Cardinal">0</Property>
+              <Property name="PromptText" type="TStrings">
+                <![CDATA[]]>
+              </Property>
+              <Property name="PromptWordWrap" type="Boolean">True</Property>
+              <Property name="RetryPauseInterval" type="Cardinal">1000</Property>
+              <Property name="SortOrder" type="TStrings">
+                <![CDATA[BuildType
+BuildParams
+Configuration
+ReleaseRoot
+]]>
+              </Property>
+              <Property name="SuppressStatusMessages" type="Boolean">False</Property>
+              <Property name="TimeOut" type="Integer">0</Property>
+              <Object Class="TPersistParam" XMLID="{0E20E84E-5EB1-4D6A-9506-AAF89D3D420B}">
+                <Property MultiValue="0" name="Caption" type="string">BuildType</Property>
+                <Property MultiValue="0" name="DefaultValue" type="string">NOBUILD</Property>
+                <Property name="InUse" type="Boolean">True</Property>
+                <Property name="List" type="TStrings">
+                  <![CDATA[NOBUILD
+CDBUILD
+REBUILD
+]]>
+                </Property>
+                <Property MultiValue="0" name="Name" type="string">BuildType</Property>
+                <Property name="ParamType" type="TParamType">ptUnsortedList</Property>
+                <Property name="SelectAll" type="Boolean">False</Property>
+              </Object>
+              <Object Class="TPersistParam" XMLID="{9E647CAF-FB05-4896-B6E4-114F7D154235}">
+                <Property MultiValue="0" name="Caption" type="string">BuildParams</Property>
+                <Property MultiValue="0" name="DefaultValue" type="string">%BuildParams%</Property>
+                <Property name="InUse" type="Boolean">True</Property>
+                <Property name="List" type="TStrings">
+                  <![CDATA[UNITTESTS
+COVERAGE
+]]>
+                </Property>
+                <Property MultiValue="0" name="Name" type="string">BuildParams</Property>
+                <Property name="ParamType" type="TParamType">ptCheckList</Property>
+                <Property name="SelectAll" type="Boolean">False</Property>
+              </Object>
+              <Object Class="TPersistParam" XMLID="{27DA951D-1EF6-4AE7-B8C2-E5D18C202F21}">
+                <Property MultiValue="0" name="Caption" type="string">Configuration</Property>
+                <Property MultiValue="0" name="DefaultValue" type="string">%Configuration%</Property>
+                <Property name="InUse" type="Boolean">True</Property>
+                <Property name="List" type="TStrings">
+                  <![CDATA[Release
+Debug
+]]>
+                </Property>
+                <Property MultiValue="0" name="Name" type="string">Configuration</Property>
+                <Property name="ParamType" type="TParamType">ptUnsortedList</Property>
+                <Property name="SelectAll" type="Boolean">False</Property>
+              </Object>
+              <Object Class="TPersistParam" XMLID="{937B272F-840A-4B26-82DF-5C9ECB49ACB1}">
+                <Property MultiValue="0" name="Caption" type="string">ReleaseRoot</Property>
+                <Property MultiValue="0" name="DefaultValue" type="string">%ReleaseRoot%</Property>
+                <Property name="InUse" type="Boolean">True</Property>
+                <Property name="List" type="TStrings">
+                  <![CDATA[]]>
+                </Property>
+                <Property MultiValue="0" name="Name" type="string">ReleaseRoot</Property>
+                <Property name="ParamType" type="TParamType">ptText</Property>
+                <Property name="SelectAll" type="Boolean">False</Property>
+              </Object>
+            </Object>
+            <Object Class="TFBVariablesSaveAction" XMLID="{5807B25C-C9A1-4EB3-9CD0-1D171A30EF09}">
+              <Property MultiValue="0" name="ActionComment" type="string"></Property>
+              <Property MultiValue="1" name="ActionDescription" type="string">
+                <![CDATA[Save Variables to INI [%IniFile%, Variables: Configuration,ReleaseRoot]]]>
+              </Property>
+              <Property name="ActionTextColor" type="Cardinal">0</Property>
+              <Property MultiValue="0" name="ActionTypeID" type="string"></Property>
+              <Property name="Enabled" type="Boolean">True</Property>
+              <Property name="EraseSection" type="Boolean">False</Property>
+              <Property name="ExpandActionLogTitle" type="Boolean">True</Property>
+              <Property name="HideActionFromLog" type="Boolean">False</Property>
+              <Property name="IgnoreFailure" type="Boolean">False</Property>
+              <Property MultiValue="0" name="INIFile" type="string">%IniFile%</Property>
+              <Property name="Locked" type="Boolean">False</Property>
+              <Property name="LogActionProperties" type="Boolean">False</Property>
+              <Property MultiValue="0" name="LogToVariable" type="TVariableName"></Property>
+              <Property name="MaxRetryAttempts" type="Cardinal">0</Property>
+              <Property name="PauseInterval" type="Cardinal">0</Property>
+              <Property name="RetryPauseInterval" type="Cardinal">1000</Property>
+              <Property name="SaveAll" type="Boolean">False</Property>
+              <Property MultiValue="0" name="SectionName" type="string">UserInput</Property>
+              <Property name="SuppressStatusMessages" type="Boolean">False</Property>
+              <Property name="Variables" type="TStrings">
+                <![CDATA[Configuration
+ReleaseRoot
+]]>
+              </Property>
+            </Object>
+            <Object Class="TFBVariablesSaveAction" XMLID="{AE8A21AA-C8EC-418A-820B-EA02EC2F9392}">
+              <Property MultiValue="0" name="ActionComment" type="string"></Property>
+              <Property MultiValue="1" name="ActionDescription" type="string">
+                <![CDATA[Save Variables to INI [%SrcDir%\VersionInfo.ini, Variables: BuildParams]]]>
+              </Property>
+              <Property name="ActionTextColor" type="Cardinal">0</Property>
+              <Property MultiValue="0" name="ActionTypeID" type="string"></Property>
+              <Property name="Enabled" type="Boolean">True</Property>
+              <Property name="EraseSection" type="Boolean">False</Property>
+              <Property name="ExpandActionLogTitle" type="Boolean">True</Property>
+              <Property name="HideActionFromLog" type="Boolean">False</Property>
+              <Property name="IgnoreFailure" type="Boolean">False</Property>
+              <Property MultiValue="0" name="INIFile" type="string">%SrcDir%\VersionInfo.ini</Property>
+              <Property name="Locked" type="Boolean">False</Property>
+              <Property name="LogActionProperties" type="Boolean">False</Property>
+              <Property MultiValue="0" name="LogToVariable" type="TVariableName"></Property>
+              <Property name="MaxRetryAttempts" type="Cardinal">0</Property>
+              <Property name="PauseInterval" type="Cardinal">0</Property>
+              <Property name="RetryPauseInterval" type="Cardinal">1000</Property>
+              <Property name="SaveAll" type="Boolean">False</Property>
+              <Property MultiValue="0" name="SectionName" type="string">BuildInfo</Property>
+              <Property name="SuppressStatusMessages" type="Boolean">False</Property>
+              <Property name="Variables" type="TStrings">
+                <![CDATA[BuildParams
+]]>
+              </Property>
+            </Object>
+          </Object>
+        </Object>
+        <Object Class="TFBActionListParametersCollection" XMLID="{986A15FE-5DC3-4076-9FD6-9A24E31D2B27}"/>
+      </Object>
+    </Object>
+    <Object Class="TFBVariablesCollection" XMLID="{AD41866B-C9D3-49FA-85CF-8B9832864C9A}">
+      <Property MultiValue="0" name="Name" type="string">Project</Property>
+      <Object Class="TFBVariable" XMLID="{36CFADAF-AB09-409D-9C32-5D0189E54B0B}">
+        <Property name="BasicType" type="TBasicType">btString</Property>
+        <Property MultiValue="0" name="Comment" type="string"></Property>
+        <Property MultiValue="0" name="DefaultValue" type="string"></Property>
+        <Property MultiValue="0" name="FormatString" type="string"></Property>
+        <Property MultiValue="0" name="GroupName" type="string">Path</Property>
+        <Property name="IsMacro" type="Boolean">False</Property>
+        <Property name="IsPersistent" type="Boolean">False</Property>
+        <Property name="MakeEnv" type="Boolean">False</Property>
+        <Property MultiValue="0" name="Name" type="string">Root</Property>
+        <Property name="VariableScope" type="TFBVariableScope">vtProject</Property>
+      </Object>
+      <Object Class="TFBVariable" XMLID="{C62EEE55-476B-478F-A0CB-3E13AE733FBA}">
+        <Property name="BasicType" type="TBasicType">btVariant</Property>
+        <Property MultiValue="0" name="Comment" type="string"></Property>
+        <Property MultiValue="0" name="DefaultValue" type="string"></Property>
+        <Property MultiValue="0" name="FormatString" type="string"></Property>
+        <Property MultiValue="0" name="GroupName" type="string">IDE</Property>
+        <Property name="IsMacro" type="Boolean">False</Property>
+        <Property name="IsPersistent" type="Boolean">False</Property>
+        <Property name="MakeEnv" type="Boolean">False</Property>
+        <Property MultiValue="0" name="Name" type="string">IniFile</Property>
+        <Property name="VariableScope" type="TFBVariableScope">vtProject</Property>
+      </Object>
+      <Object Class="TFBVariable" XMLID="{78492558-61A0-474E-AC03-EFD9607ED318}">
+        <Property name="BasicType" type="TBasicType">btVariant</Property>
+        <Property MultiValue="0" name="Comment" type="string"></Property>
+        <Property MultiValue="0" name="DefaultValue" type="string"></Property>
+        <Property MultiValue="0" name="FormatString" type="string"></Property>
+        <Property MultiValue="0" name="GroupName" type="string">Path</Property>
+        <Property name="IsMacro" type="Boolean">False</Property>
+        <Property name="IsPersistent" type="Boolean">False</Property>
+        <Property name="MakeEnv" type="Boolean">False</Property>
+        <Property MultiValue="0" name="Name" type="string">ProductRoot</Property>
+        <Property name="VariableScope" type="TFBVariableScope">vtProject</Property>
+      </Object>
+      <Object Class="TFBVariable" XMLID="{BE9B3D3E-BC70-4E54-917D-A731F1E7F6CC}">
+        <Property name="BasicType" type="TBasicType">btVariant</Property>
+        <Property MultiValue="0" name="Comment" type="string"></Property>
+        <Property MultiValue="0" name="DefaultValue" type="string"></Property>
+        <Property MultiValue="0" name="FormatString" type="string"></Property>
+        <Property MultiValue="0" name="GroupName" type="string">Path</Property>
+        <Property name="IsMacro" type="Boolean">False</Property>
+        <Property name="IsPersistent" type="Boolean">False</Property>
+        <Property name="MakeEnv" type="Boolean">False</Property>
+        <Property MultiValue="0" name="Name" type="string">SrcDir</Property>
+        <Property name="VariableScope" type="TFBVariableScope">vtProject</Property>
+      </Object>
+      <Object Class="TFBVariable" XMLID="{62822E27-BBA6-414D-B849-26EF35BA46FC}">
+        <Property name="BasicType" type="TBasicType">btVariant</Property>
+        <Property MultiValue="0" name="Comment" type="string"></Property>
+        <Property MultiValue="0" name="DefaultValue" type="string"></Property>
+        <Property MultiValue="0" name="FormatString" type="string"></Property>
+        <Property MultiValue="0" name="GroupName" type="string">Path</Property>
+        <Property name="IsMacro" type="Boolean">False</Property>
+        <Property name="IsPersistent" type="Boolean">False</Property>
+        <Property name="MakeEnv" type="Boolean">False</Property>
+        <Property MultiValue="0" name="Name" type="string">RunDir</Property>
+        <Property name="VariableScope" type="TFBVariableScope">vtProject</Property>
+      </Object>
+      <Object Class="TFBVariable" XMLID="{36892DA1-E349-4831-9A00-7DD4434CCFE8}">
+        <Property name="BasicType" type="TBasicType">btString</Property>
+        <Property MultiValue="1" name="Comment" type="string">
+          <![CDATA[Product Name - short form. To be used in path, filenames, etc.]]>
+        </Property>
+        <Property MultiValue="0" name="DefaultValue" type="string">Compass</Property>
+        <Property MultiValue="0" name="FormatString" type="string"></Property>
+        <Property MultiValue="0" name="GroupName" type="string">BuildInfo</Property>
+        <Property name="IsMacro" type="Boolean">False</Property>
+        <Property name="IsPersistent" type="Boolean">False</Property>
+        <Property name="MakeEnv" type="Boolean">False</Property>
+        <Property MultiValue="0" name="Name" type="string">ProductName</Property>
+        <Property name="VariableScope" type="TFBVariableScope">vtProject</Property>
+      </Object>
+      <Object Class="TFBVariable" XMLID="{B886DC44-3EBB-4B32-BFE4-1577CACDF929}">
+        <Property name="BasicType" type="TBasicType">btVariant</Property>
+        <Property MultiValue="0" name="Comment" type="string"></Property>
+        <Property MultiValue="0" name="DefaultValue" type="string"></Property>
+        <Property MultiValue="0" name="FormatString" type="string"></Property>
+        <Property MultiValue="0" name="GroupName" type="string">Path</Property>
+        <Property name="IsMacro" type="Boolean">False</Property>
+        <Property name="IsPersistent" type="Boolean">False</Property>
+        <Property name="MakeEnv" type="Boolean">False</Property>
+        <Property MultiValue="0" name="Name" type="string">ReleasePath</Property>
+        <Property name="VariableScope" type="TFBVariableScope">vtProject</Property>
+      </Object>
+      <Object Class="TFBVariable" XMLID="{9CE01BC5-A5DF-41EC-8E8E-CCE3028DDE8F}">
+        <Property name="BasicType" type="TBasicType">btVariant</Property>
+        <Property MultiValue="0" name="Comment" type="string"></Property>
+        <Property MultiValue="0" name="DefaultValue" type="string"></Property>
+        <Property MultiValue="0" name="FormatString" type="string"></Property>
+        <Property MultiValue="0" name="GroupName" type="string">VersionInfo</Property>
+        <Property name="IsMacro" type="Boolean">False</Property>
+        <Property name="IsPersistent" type="Boolean">False</Property>
+        <Property name="MakeEnv" type="Boolean">False</Property>
+        <Property MultiValue="0" name="Name" type="string">ProductVersion</Property>
+        <Property name="VariableScope" type="TFBVariableScope">vtProject</Property>
+      </Object>
+      <Object Class="TFBVariable" XMLID="{3842A2C4-EE9D-4D89-8B79-87FBD7451204}">
+        <Property name="BasicType" type="TBasicType">btVariant</Property>
+        <Property MultiValue="1" name="Comment" type="string">
+          <![CDATA[BuildType afgør hvordan der bygges:
+CDBUILD: Tager et snapshot og udtrækker snapshottet til byg
+NOBUILD: Bygger i workspace. Ingen snapshot
+REBUILD: Genbyg udfra et specificeret snapshot]]>
+        </Property>
+        <Property MultiValue="0" name="DefaultValue" type="string"></Property>
+        <Property MultiValue="0" name="FormatString" type="string"></Property>
+        <Property MultiValue="0" name="GroupName" type="string">Params</Property>
+        <Property name="IsMacro" type="Boolean">False</Property>
+        <Property name="IsPersistent" type="Boolean">False</Property>
+        <Property name="MakeEnv" type="Boolean">False</Property>
+        <Property MultiValue="0" name="Name" type="string">BuildType</Property>
+        <Property name="VariableScope" type="TFBVariableScope">vtProject</Property>
+      </Object>
+      <Object Class="TFBVariable" XMLID="{12EDEF6F-371C-4F2B-886D-1C9C48300D60}">
+        <Property name="BasicType" type="TBasicType">btVariant</Property>
+        <Property MultiValue="0" name="Comment" type="string"></Property>
+        <Property MultiValue="0" name="DefaultValue" type="string"></Property>
+        <Property MultiValue="0" name="FormatString" type="string"></Property>
+        <Property MultiValue="0" name="GroupName" type="string">Path</Property>
+        <Property name="IsMacro" type="Boolean">False</Property>
+        <Property name="IsPersistent" type="Boolean">False</Property>
+        <Property name="MakeEnv" type="Boolean">False</Property>
+        <Property MultiValue="0" name="Name" type="string">ReleaseRoot</Property>
+        <Property name="VariableScope" type="TFBVariableScope">vtProject</Property>
+      </Object>
+      <Object Class="TFBVariable" XMLID="{504E0C0A-0B52-4919-BB1B-4F535194A366}">
+        <Property name="BasicType" type="TBasicType">btVariant</Property>
+        <Property MultiValue="1" name="Comment" type="string">
+          <![CDATA[Parametre som skal overføres til buildscripts. 
+Disse scripts afgør behandlingen. 
+Formatet er kommasepareret streng uden mellemrum.
+Gældende for COMPASS:WPR1,REDUCED]]>
+        </Property>
+        <Property MultiValue="0" name="DefaultValue" type="string"></Property>
+        <Property MultiValue="0" name="FormatString" type="string"></Property>
+        <Property MultiValue="0" name="GroupName" type="string">Params</Property>
+        <Property name="IsMacro" type="Boolean">False</Property>
+        <Property name="IsPersistent" type="Boolean">False</Property>
+        <Property name="MakeEnv" type="Boolean">False</Property>
+        <Property MultiValue="0" name="Name" type="string">BuildParams</Property>
+        <Property name="VariableScope" type="TFBVariableScope">vtProject</Property>
+      </Object>
+      <Object Class="TFBVariable" XMLID="{7C750D4E-BF7A-4079-A9A1-A92B3C5DE4D6}">
+        <Property name="BasicType" type="TBasicType">btString</Property>
+        <Property MultiValue="1" name="Comment" type="string">
+          <![CDATA[MSBuild configuration (Debug, Release)]]>
+        </Property>
+        <Property MultiValue="0" name="DefaultValue" type="string">Release</Property>
+        <Property MultiValue="0" name="FormatString" type="string"></Property>
+        <Property MultiValue="0" name="GroupName" type="string">BuildInfo</Property>
+        <Property name="IsMacro" type="Boolean">False</Property>
+        <Property name="IsPersistent" type="Boolean">False</Property>
+        <Property name="MakeEnv" type="Boolean">False</Property>
+        <Property MultiValue="0" name="Name" type="string">Configuration</Property>
+        <Property name="VariableScope" type="TFBVariableScope">vtProject</Property>
+      </Object>
+      <Object Class="TFBVariable" XMLID="{57B236E9-5F0B-403B-A223-18DBC10DD3DA}">
+        <Property name="BasicType" type="TBasicType">btString</Property>
+        <Property MultiValue="1" name="Comment" type="string">
+          <![CDATA[Internal Project Code Name. 
+Note: Not necessary the official sales name.]]>
+        </Property>
+        <Property MultiValue="0" name="DefaultValue" type="string">GPS</Property>
+        <Property MultiValue="0" name="FormatString" type="string"></Property>
+        <Property MultiValue="0" name="GroupName" type="string">BuildInfo</Property>
+        <Property name="IsMacro" type="Boolean">False</Property>
+        <Property name="IsPersistent" type="Boolean">False</Property>
+        <Property name="MakeEnv" type="Boolean">False</Property>
+        <Property MultiValue="0" name="Name" type="string">ProjectName</Property>
+        <Property name="VariableScope" type="TFBVariableScope">vtProject</Property>
+      </Object>
+      <Object Class="TFBVariable" XMLID="{332DA047-015A-4225-9226-D9C37B4C09E4}">
+        <Property name="BasicType" type="TBasicType">btString</Property>
+        <Property MultiValue="1" name="Comment" type="string">
+          <![CDATA[Company Name - short form. To be used in path, filenames, etc.]]>
+        </Property>
+        <Property MultiValue="0" name="DefaultValue" type="string">Widex</Property>
+        <Property MultiValue="0" name="FormatString" type="string"></Property>
+        <Property MultiValue="0" name="GroupName" type="string">BuildInfo</Property>
+        <Property name="IsMacro" type="Boolean">False</Property>
+        <Property name="IsPersistent" type="Boolean">False</Property>
+        <Property name="MakeEnv" type="Boolean">False</Property>
+        <Property MultiValue="0" name="Name" type="string">CompanyName</Property>
+        <Property name="VariableScope" type="TFBVariableScope">vtProject</Property>
+      </Object>
+      <Object Class="TFBVariable" XMLID="{1AEAF134-13A8-462B-BE26-D84BEC466082}">
+        <Property name="BasicType" type="TBasicType">btVariant</Property>
+        <Property MultiValue="1" name="Comment" type="string">
+          <![CDATA[BuildLevel er bestemt af hvilket Level (stage) der bygges fra i Accurev QA: QA stream INT: Integration stream DEV: Developer stream]]>
+        </Property>
+        <Property MultiValue="0" name="DefaultValue" type="string">QA</Property>
+        <Property MultiValue="0" name="FormatString" type="string"></Property>
+        <Property MultiValue="0" name="GroupName" type="string">Params</Property>
+        <Property name="IsMacro" type="Boolean">False</Property>
+        <Property name="IsPersistent" type="Boolean">False</Property>
+        <Property name="MakeEnv" type="Boolean">False</Property>
+        <Property MultiValue="0" name="Name" type="string">BuildLevel</Property>
+        <Property name="VariableScope" type="TFBVariableScope">vtProject</Property>
+      </Object>
+      <Object Class="TFBVariable" XMLID="{671A22C0-DBC3-459E-8AC4-54B4A96D94D5}">
+        <Property name="BasicType" type="TBasicType">btString</Property>
+        <Property MultiValue="1" name="Comment" type="string">
+          <![CDATA[Lokal unique id til skelne imellem NOBUILDs. Lokal ifht. (company,produkt, version, BuildLevel) Eks på id: tids stempel eller Accurev transactionsnummer.]]>
+        </Property>
+        <Property MultiValue="0" name="DefaultValue" type="string"></Property>
+        <Property MultiValue="0" name="FormatString" type="string"></Property>
+        <Property MultiValue="0" name="GroupName" type="string">VersionInfo</Property>
+        <Property name="IsMacro" type="Boolean">False</Property>
+        <Property name="IsPersistent" type="Boolean">False</Property>
+        <Property name="MakeEnv" type="Boolean">False</Property>
+        <Property MultiValue="0" name="Name" type="string">BuildLocalId</Property>
+        <Property name="VariableScope" type="TFBVariableScope">vtProject</Property>
+      </Object>
+      <Object Class="TFBVariable" XMLID="{1ABC47D9-C0B6-4E4B-BE12-2D36165B112C}">
+        <Property name="BasicType" type="TBasicType">btString</Property>
+        <Property MultiValue="1" name="Comment" type="string">
+          <![CDATA[Certificat Identifikation. Parameter til BuildMain Se Index.ini for Ids]]>
+        </Property>
+        <Property MultiValue="0" name="DefaultValue" type="string"></Property>
+        <Property MultiValue="0" name="FormatString" type="string"></Property>
+        <Property MultiValue="0" name="GroupName" type="string">Params</Property>
+        <Property name="IsMacro" type="Boolean">False</Property>
+        <Property name="IsPersistent" type="Boolean">False</Property>
+        <Property name="MakeEnv" type="Boolean">False</Property>
+        <Property MultiValue="0" name="Name" type="string">CertificateId</Property>
+        <Property name="VariableScope" type="TFBVariableScope">vtProject</Property>
+      </Object>
+      <Object Class="TFBVariable" XMLID="{71FA8216-5832-4FAE-B27A-F4E0F0873A37}">
+        <Property name="BasicType" type="TBasicType">btVariant</Property>
+        <Property MultiValue="1" name="Comment" type="string">
+          <![CDATA[Rodsti til Certificat rod folder (endelig sti bestemmes af Main byg). Certificat folder gemmer offentlige certificater samt ids til egne nøgler.]]>
+        </Property>
+        <Property MultiValue="0" name="DefaultValue" type="string"></Property>
+        <Property MultiValue="0" name="FormatString" type="string"></Property>
+        <Property MultiValue="0" name="GroupName" type="string">path</Property>
+        <Property name="IsMacro" type="Boolean">False</Property>
+        <Property name="IsPersistent" type="Boolean">False</Property>
+        <Property name="MakeEnv" type="Boolean">False</Property>
+        <Property MultiValue="0" name="Name" type="string">CertificateRoot</Property>
+        <Property name="VariableScope" type="TFBVariableScope">vtProject</Property>
+      </Object>
+      <Object Class="TFBVariable" XMLID="{55014186-DB3F-4097-92E1-CD39B8446C40}">
+        <Property name="BasicType" type="TBasicType">btString</Property>
+        <Property MultiValue="1" name="Comment" type="string">
+          <![CDATA[Sti til hvor dette product &amp; projekt bliver released.
+Stien bruges både til den endelig ReleasePath beregning og til fælles ting som Coverage analyser, osv.]]>
+        </Property>
+        <Property MultiValue="0" name="DefaultValue" type="string"></Property>
+        <Property MultiValue="0" name="FormatString" type="string"></Property>
+        <Property MultiValue="0" name="GroupName" type="string">path</Property>
+        <Property name="IsMacro" type="Boolean">False</Property>
+        <Property name="IsPersistent" type="Boolean">False</Property>
+        <Property name="MakeEnv" type="Boolean">False</Property>
+        <Property MultiValue="0" name="Name" type="string">ReleaseProjectRoot</Property>
+        <Property name="VariableScope" type="TFBVariableScope">vtProject</Property>
+      </Object>
+      <Object Class="TFBVariable" XMLID="{9F609BDF-00CF-4C78-A874-16E95FE99C0C}">
+        <Property name="BasicType" type="TBasicType">btVariant</Property>
+        <Property MultiValue="1" name="Comment" type="string">
+          <![CDATA[Sti til fælles build stumper på tværs af projekter]]>
+        </Property>
+        <Property MultiValue="0" name="DefaultValue" type="string"></Property>
+        <Property MultiValue="0" name="FormatString" type="string"></Property>
+        <Property MultiValue="0" name="GroupName" type="string">path</Property>
+        <Property name="IsMacro" type="Boolean">False</Property>
+        <Property name="IsPersistent" type="Boolean">False</Property>
+        <Property name="MakeEnv" type="Boolean">False</Property>
+        <Property MultiValue="0" name="Name" type="string">BuildCommon</Property>
+        <Property name="VariableScope" type="TFBVariableScope">vtProject</Property>
+      </Object>
+    </Object>
+    <Object Class="TFBProjectGlobalScript" XMLID="{64EC4AF4-7B4B-4860-A48B-EF18A220CBB5}">
+      <Property MultiValue="1" name="Script" type="string">
+        <![CDATA[//MadExceptOpt = GetOptionsObject(&quot;MadExcept&quot;);
+//MadExceptOpt.Location = &quot;D:\\cpas\\products\\infotrack_1.2_int\\thirdparts\\madCollection\\madExcept\\Tools\\madExceptPatch.exe&quot;; // make sure you use double backslashes in the path
+]]>
+      </Property>
+      <Property MultiValue="0" name="ScriptLanguage" type="string">JavaScript</Property>
+    </Object>
+    <Object Class="TFBProjectGlobalScript" XMLID="{D152A62F-3251-41EE-8FE4-8F37C7827215}">
+      <Property MultiValue="1" name="Script" type="string">
+        <![CDATA[&#39; Create the end-user automation object
+Dim IsProject: set IsProject = CreateObject(&quot;ISWiAuto18.ISWiProject&quot;)
+
+&#39; Update main GUIDs in an InstallShield MSI project
+&#39; and generate new component guids if requested
+Sub ISupdateCodes(fName, upgrade, product, package, newComponentIds )
+  IsProject.OpenProject fName
+  IsProject.UpgradeCode = upgrade
+  IsProject.ProductCode = product
+  IsProject.PackageCode = package
+  If newComponentIds Then
+  Dim component
+  For Each component In IsProject.ISWiComponents
+    component.GUID = IsProject.GenerateGUID()
+  Next
+  End If
+  IsProject.SaveProject
+  IsProject.CloseProject
+End Sub
+]]>
+      </Property>
+      <Property MultiValue="0" name="ScriptLanguage" type="string">VBScript</Property>
+    </Object>
+  </Object>
+</VSXML>

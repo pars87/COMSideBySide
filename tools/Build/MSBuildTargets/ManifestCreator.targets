@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003"
+  ToolsVersion="4.0">
+
+  <!--
+  Dette byggemål bygger manifestet på basis af DLL'en og sammenholder det med
+  det, som er bygget ind i DLL'en.
+  Det er en nødløsning, fordi det ikke lykkedes at inkludere byg af manifestet
+  i det automatiske byg.
+  -->
+
+  <PropertyGroup>
+    <Manifest>$(TargetName).manifest</Manifest>
+    <ProjectManifest>$(ProjectDir)$(Manifest)</ProjectManifest>
+    <IntermediateManifest>$(IntermediateOutputPath)$(Manifest)</IntermediateManifest>
+    <IntermediateCompareFile>$(IntermediateOutputPath)Manifest.compare</IntermediateCompareFile>
+  </PropertyGroup>
+
+  <Target Name="CreateManifest" Inputs="$(IntermediateOutputPath)$(AssemblyName).dll" Outputs="$(IntermediateManifest)">
+    <Message Text="Creating Manifest..." />
+    <PropertyGroup>
+      <ManifestCreator>$(MSBuildThisFileDirectory)..\..\ManifestCreator\Run\ManifestCreator.exe</ManifestCreator>
+      <CreateManifestCommand><![CDATA["$(ManifestCreator)" -clr $(TargetName)$(TargetExt)]]></CreateManifestCommand>
+    </PropertyGroup>
+    <Exec Command="$(CreateManifestCommand)" WorkingDirectory="$(IntermediateOutputPath)" />
+  </Target>
+
+  <Target Name="CreateManifest:Clean" AfterTargets="Clean">
+    <Delete Files="$(IntermediateManifest)"/>
+  </Target>
+
+  <Target Name="CreateManifest:CopyDependencies" Inputs="@(ManifestDependency)" Outputs="@(ManifestDependency->'$(IntermediateOutputPath)%(Filename)%(Extension)')" BeforeTargets="CreateManifest">
+    <Copy SourceFiles="@(ManifestDependency)" DestinationFolder="$(IntermediateOutputPath)" />
+  </Target>
+
+  <Target Name="CreateManifest:CopyDependencies:Clean" AfterTargets="Clean">
+    <Delete Files="@(ManifestDependency->'$(IntermediateOutputPath)%(Filename)%(Extension)')" />
+  </Target>
+
+  <Target Name="CheckManifest" Inputs="$(IntermediateManifest);$(ProjectManifest)" Outputs="$(IntermediateCompareFile)" DependsOnTargets="CreateManifest">
+    <Message Text="Checking Manifest..." />
+    <PropertyGroup>
+      <FcCommand><![CDATA[fc.exe $(ProjectManifest) $(IntermediateManifest) > $(IntermediateCompareFile)]]></FcCommand>
+    </PropertyGroup>
+    <Exec Command="$(FcCommand)" IgnoreExitCode="true">
+      <Output TaskParameter="ExitCode" PropertyName="ExitCode" />
+    </Exec>
+    <Warning Condition="$(ExitCode) != 0" Text="Manifest file is not up to date with code! Find the new file in &quot;$(IntermediateOutputPath)$(AssemblyName).manifest&quot;." />
+  </Target>
+
+  <Target Name="CheckManifest:Clean" AfterTargets="Clean">
+    <Delete Files="$(IntermediateCompareFile)"/>
+  </Target>
+
+</Project>
